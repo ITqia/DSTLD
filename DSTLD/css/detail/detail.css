@@ -1,0 +1,266 @@
+.row{
+    margin: 0;
+}
+p{
+    letter-spacing: .5px;
+}
+/**
+ gallery
+ */
+.pdp-top{
+    margin-top: 40px;
+}
+.gallery{
+    padding: 0 15px;
+}
+.gallery .main-container .image-container img{
+    width: 100%;
+}
+.main-container{
+    position: relative;
+    cursor: zoom-in;
+}
+.prev{
+    left: -5px;
+}
+.next{
+    right: -5px;
+    transition: .2s;
+}
+.arrow{
+    font-size: 24px!important;
+    cursor: pointer;
+    padding: 20px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+    opacity: 0;
+}
+.main-container:hover .arrow{
+    transition: .2s;
+    opacity: 1;
+}
+.gallery .zoomed-container{
+    display: none;
+    position: absolute;
+    background-color: #a6e1ec;
+    overflow: hidden;
+    left: 100%;
+    top: 0;
+    width: 75%;
+    height: 55%;
+    z-index: 25;
+}
+.magnifier{
+    display: none;
+    position: absolute;
+    top: 0;
+    cursor: move;
+    opacity: .1;
+    background-color: #ffffff;
+    z-index: 20;
+    border: 2px solid #000000;
+}
+.zoomed-container img{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+/**
+ */
+.pdp-content{
+    padding-left: 24px;
+    padding-right: 60px;
+}
+.pdp-content-name{
+    margin-top: 0px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Helvetica Neue LT W01_71488914 Bd",Helvetica,Arial,sans-serif!important;
+}
+pdp-content-price{
+    font-size: 13px;
+    color: #666;
+    font-family: "Helvetica Neue LT W01_71488914 Bd",Helvetica,Arial,sans-serif!important;
+}
+.pdp-content-swatches{
+    margin-top: 15px;
+    padding-bottom: 15px;
+    height: auto;
+}
+.pdp-swatches-option{
+    display: inline-block;
+    float: left;
+    margin: 2px;
+    padding: 2px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.pdp-swatches-option a{
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+.pdp-swatches-option a img{
+    width: 100%
+}
+.pdp-swatches-option:hover{
+    border:1px solid #000;
+}
+.pdp-content-swatches .active{
+    border:1px solid #000!important;
+}
+.pdp-variants-option{
+    display: inline-block;
+    min-width:35px;
+    height: 35px;
+    line-height: 33px;
+    text-align: center;
+    border:1px solid #ccc;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+.pdp-size{
+    width: 100%;
+    height: 100%;
+    padding:0px 7px 1px;
+    border: 1px solid transparent;
+}
+.pdp-variants-option:hover{
+    background: #f1f1f1;
+}
+.pdp-variants-label{
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.pdp-finder{
+    padding-left: 2em;
+    color: #0A0A0A;
+    text-decoration: underline;
+}
+.pdp-finder:hover{
+    color: #0A0A0A;
+}
+.btn-add-to-cart{
+    padding: 12px 15px;
+    font-family: "Helvetica Neue LT W01_71488914 Bd",Helvetica,Arial,sans-serif!important;
+    font-weight: 700;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+.btn-add-to-cart:hover{
+    color: #ffffff;
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,.18),
+    0 4px 15px 0 rgba(0,0,0,.15);
+}
+.add-to-cart{
+    margin-bottom: 15px;
+}
+.fit-link{
+    margin-top: 5px;
+}
+.fit-link a{
+    color: #0A0A0A;
+    text-decoration: underline;
+}
+.fit-link a:hover{
+    color: #0A0A0A;
+}
+.pdp-tab{
+    margin-top: 20px;
+}
+.pdp-tabs{
+    border-bottom: none;
+}
+.nav-tabs li{
+    display: table-cell;
+    width: 1%;
+    float: none;
+    cursor: pointer;
+}
+.nav-tabs li a:hover{
+    background: none;
+}
+.nav-tabs li:hover{
+    border-bottom: 1px solid #dddddd;
+}
+.nav-tabs li a{
+    font-family: "Helvetica Neue LT W01_71488914 Bd",Helvetica,Arial,sans-serif!important;
+    font-size: 10px;
+    font-weight: 700;
+    color: #0A0A0A;
+    line-height: 1.2;
+    padding:5px 15px;
+    text-align: center;
+    border: none!important;
+}
+.nav-tabs .active{
+    border: none!important;
+    border-bottom: 1px solid #0A0A0A!important;
+}
+.shipping-notes{
+    list-style: none;
+    padding-left: 15px;
+}
+.tab-content{
+    padding: 10px 0;
+}
+/**pdp-review
+ */
+.reviews-col{
+    float: right;
+}
+.pdp-review{
+    padding: 0 5em 0 2em;
+}
+.pdp-review hr{
+    border:1px solid #888888;
+}
+.pdp-review-head .row{
+    margin-left: -15px!important;
+    margin-right: -15px!important;
+
+}
+.pdp-review-head hr{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.rating{
+    font-family: "Helvetica Neue LT W01_71488914 Bd",Helvetica,Arial,sans-serif!important;
+    font-weight: 700;
+    font-size: 24px;
+    height: 43px;
+    margin-top: -5px;
+    line-height: 1.2;
+}
+.fa-lg{
+    font-size: 1.33em;
+}
+.half-unfilled-star{
+    transform: scale(-1,1);
+    color: #ccc;
+    margin-left: -5px;
+    margin-right: 2px;
+}
+.num-reviews{
+    display: inline-block;
+    margin-left: 30px;
+    letter-spacing: .5px;
+    color: #999999;
+}
+.close-reviews a{
+    font-family: "Helvetica Neue LT W01_35 Thin",Helvetica,Arial,sans-serif!important;
+    color: #000000;
+    text-decoration: underline;
+    letter-spacing: .5px;
+}
+.close-reviews{
+    float: right;
+}
+.thumb-container img{
+    width: 60px;
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="../../bootstrap.min.css"/>
+    <script src="../../jquery-3.2.1.min.js"></script>
+    <script src="../../bootstrap.min.js"></script>
+    <script src="../../angular.min.js"></script>
+    <link  rel="stylesheet" href="../../css/modal/modal.css"/>
+    <link rel="stylesheet" href="../../css/help/faq.css"/>
+    <script src="../../js/myCtrlModal.js"></script>
+</head>
+<body>
+<!--join/login modal-->
+<div class="modal fade" ng-app="app" id="userModal">
+    <div class="modal-dialog" ng-controller="MyCtrl" ng-model="isShow">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close close-white" data-dismiss="modal" aria-label="Close" ng-click="isShow='LOGIN'">
+                    <img id="img-close" aria-hidden="true" src="../../assets/icon-close-white-308ae050a896916dd8c42f9426025f6a.png"></img>
+                </button>
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="form-holder">
+                            <div>
+                                <form ng-hide=" isShow!='LOGIN' ">
+                                    <h1>SIGN UP AND ENJOY 10% OFF </h1>
+                                    <p>DSTLD strips away excess, impurities, and retail go-betweens, offering men &amp; women of style luxe premium denim &amp; other high-caliber essentials – free of the standard 4-7x markup.</p>
+                                    <br>
+                                    <div class="form-group">
+                                        <input class="form-control underline" placeholder="Email" required="required" type="email" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="btn btn-block btn-black btn--raised" value="NEXT" type="submit"/>
+                                    </div>
+                                </form>
+                                <form id="login" ng-hide="isShow=='LOGIN'">
+                                    <h1>Login</h1>
+                                    <br>
+                                    <div class="form-group">
+                                        <input class="form-control underline" placeholder="Email" required="required" type="email" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control underline" placeholder="Password" required="required" type="email" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="btn btn-block btn-black btn--raised" value="LOGIN" type="submit"/>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <a class="pull-right">Forgot password?</a>
+                                        </div>
+                                    </div>
+                                </form>
+                                <br>
+                                <p>OR JOIN WITH...</p>
+                                <div class="row social-auth">
+                                    <div class="col-sm-6 col-xs-12">
+                                        <a class="btn btn-block btn-fb">
+                                            <span class="fa"></span>
+                                            &nbsp; FACEBOOK
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-6 col-xs-12">
+                                        <a class="btn btn-block btn-google">
+                                            <span class="fa"></span>
+                                            &nbsp; GOOGLE+
+                                        </a>
+                                    </div>
+                                </div>
+                                <br>
+                                <p>ALREADY HAVE AN ACCOUNT?</p>
+                                <br>
+                                <div class="row no-padding">
+                                    <a class="btn btn-block btn-gray" ng-click="isShow='JOIN'">{{isShow}}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 导航栏-->
+<div id="nav"></div>
+<div class="content">
+        <div class="faq">
+            <div class="container">
+                <div class="col-sm-2">
+                    <div class="sidebar-menu">
+                        <a href="Shipping.html"><span>Shipping</span></a>
+                        <a href="Returns.html"><span>Returns</span></a>
+                        <a href="FAQ.html"><span>FAQ</span></a>
+                        <a href="Terms.html"><span>Terms</span></a>
+                        <a href="Privacy.html"><span>Privacy</span></a>
+                        <a href="ContactUs.html"><span>Contact Us</span></a>
+                    </div>
+                </div>
+                <div class="col-sm-7 col-sm-offset-1"><h2 class="title">FAQ</h2><p><strong>HOW DOES DSTLD SHIP MY ORDER?</strong></p>
+                    <p>DSTLD offers free ground shipping within the United States 50 states including Washington, D.C., which will take 3-8&nbsp;business days to arrive after your order ships. Please allow 24-48 business hours for warehouse processing after all orders are placed. We use a combination of US Postal Service, OnTrac and other regional carriers to provide our free ground shipping. There will be an upcharge of $10 for any order shipping to US Overseas Territories or Overseas Military Bases. We offer UPS Ground and UPS 2 Day for an additional charge. International orders are&nbsp;typically processed by our&nbsp;team within 24-48 business hours. Delivery time for international orders depends on destination with most locations taking 2-4 weeks (1-3 weeks for Canada).&nbsp;We use RR Donnelley for shipping outside of the United States.</p>
+                    <p><br>
+                        <strong>DO YOU OFFER PROMO CODES / SALES?</strong></p>
+                    <p>As part of our business model, we do not offer promotions or sales on any core product. By sidestepping middlemen (i.e. department stores and boutiques), we are able to produce luxury garments that sell for 3 – 7x less than a traditional luxury brand, providing premium essentials at the absolute best price. While other brands’ models necessitate exorbitant prices to cover margins and the cost of inevitable sales and markdowns, DSTLD avoids these excessive markups by selling directly to you. We may occasionally announce a promotion if we decide to discontinue an item. Please sign up (https://www.dstldjeans.com/users/sign_in) to receive news and updates from DSTLD.<br>
+                        <br>
+                        <strong>WHY CAN'T I ORDER JUST ONE T-SHIRT, TANK, OR BRALETTE?</strong></p>
+                    <p>In order to offer the best online shopping experience, we’re committed to providing Free Shipping and Returns on all orders. However, shipping a single Tee, Tank or bralette&nbsp;consumes valuable environmental and material resources, like fuel, packaging, and paper. In an effort to conserve these resources, we do not fulfill single Tee, Tank or bralette&nbsp;orders.<br>
+                        <br>
+                        <strong>WHERE ARE YOU LOCATED?</strong></p>
+                    <p>DSTLD HQ is in Los Angeles, California – premium denim capital of the world.<br>
+                        <br>
+                        <strong>WHAT’S THE BEST WAY TO CONTACT YOU?</strong></p>
+                    <p>You may contact our Customer Care team from 6am-9pm Monday-Friday via live chat, email or text message. &nbsp;For press and media inquiries, please drop us a line at <a href="mailto:media@dstld.la">media@dstld.la</a><br>
+                        <br>
+                        <strong>DO YOUR PRODUCTS RUN TRUE TO SIZE?</strong></p>
+                    <p>Yes, DSTLD denim typically runs true to size. However, if a product has any tendency to do otherwise, it will be explicitly mentioned in the “style and fit notes” within the product’s general description. A fit guide/sizing chart is also available on the site to assist you.<br>
+                        <br>
+                        <strong>DOES DSTLD.COM KEEP MY INFORMATION SECURE?</strong></p>
+                    <p>The safety of your personal information is extremely important to us. We do not store your credit card information anywhere on our own servers; your payment passes directly and securely through DSTLD to our PCI-DSS-compliant service provider. We take all possible security measures to protect your personal data and credit card information from unauthorized access.<br>
+                        <br>
+                        <strong>HOW CAN I TRACK THE STATUS OF MY ORDER?</strong></p>
+                    <p>Once your order has shipped, you will receive a confirmation email containing the tracking number for the shipment. You can also track your shipments here:</p>
+                    <p><a href="#">Standard Ground Shipping</a>&nbsp;</p>
+                    <p><a href="#">UPS Ground or UPS 2-Day</a></p>
+                    <p><a href="#">International Orders</a><br>
+                        <br>
+                        <strong>HOW LONG WILL IT TAKE FOR MY ORDER TO GET HERE?</strong></p>
+                    <p>For our standard free shipping within the United States and Washington D.C., it will take anywhere from 3-7 business days for your order to arrive. Please allow additional time for APO and AFO. For UPS Ground please allow 1-5 business days and for UPS 2 Day please allow 2 business days from the time your order has shipped.<br>
+                        <br>
+                        <strong>WHAT MIGHT CAUSE MY ORDER TO BE DELAYED?</strong></p>
+                    <p>If the billing information you provided does not match the info your bank has on file (including address + telephone number), it’s likely to create a delay. Additionally, you may experience a delay if your shipping address is different from your billing address, or if you forgot to provide your exact apartment/unit number. If you have not received word from us (via email) within 3 days of placing an order, you may want to check the “Spam” folder of your email account for any DSTLD memos.<br>
+                        <br>
+                        <strong>WHAT FORMS OF PAYMENT DO YOU ACCEPT?</strong></p>
+                    <p>We currently accept Visa, MasterCard, Discover, American Express, Amazon Payment, and PayPal for all orders.<br>
+                        <br>
+                        <strong>WHAT IS YOUR RETURN POLICY?</strong></p>
+                    <p>Customers may return items for a full refund or store credit within 30 days of purchase. If you purchased expedited shipping (UPS Ground or UPS 2 Day), unfortunately we will not be able to issue a refund or store credit for that amount. Please ensure that your returned items are not worn, washed, or damaged. We’ve prepaid your return postage. We ask for the return to be processed on the site under the "account" down to the "returns" field on DSTLD.com. After that is processed the return label label will be emailed directly to you. If you request store credit when processing your return, we will issue the store credit within 2 business days after you place your return package in the mail. If you request a refund, please allow 5-7 business days for the refund to be completed after it is received by the warehouse.&nbsp;</p>
+                    <p>For international orders customers are responsible for covering the cost of shipping a return back to us. Returns must be made within 45 days of the order date, please send your return to the address listed below. We are unable to issue a refund or store credit for the cost of international shipping, only the value of the goods you purchased. If you wish to return your item(s) and receive a refund, select “refund” when processing your return. All returns will be completed within 5-7 business days of the warehouse delivery.<br>
+                        <br>
+                        <strong>CAN I CANCEL OR UPDATE MY ORDER?</strong></p>
+                    <p>You may request a cancellation under the "orders" tab on your account within one hour of placing the order.</p>
+                    <p><br>
+                        <strong>HOW DO I RETURN A GIFT?</strong></p>
+                    <p>Gifts may be returned for store credit only. Please email hello@dstld.la with any information you can provide, ie: Name of person who ordered, order number, items included in your order, what you'd like to return, etc. Feel free to include photos!</p>
+                    <p><strong>DOES MY PACKAGE REQUIRE A SIGNATURE?</strong></p>
+                    <p>Yes,&nbsp;all orders over $200.00 will require to be signed at delivery.<br>
+                        <br>
+                        <strong>CONDITIONS:</strong></p>
+                    <ul>
+                        <li>Returned items must be unwashed/unworn with original tags and packaging and free of any odors or pet hair. (By unworn, we mean items may not be worn for an extensive “outing.” You are of course welcome and encourage to try DSTLD on for size at home.)</li>
+                        <li>Returns must be received at our address within 30 days from the date of transaction.</li>
+                    </ul>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<div id="footer"></div>
+
+<script>
+    $("#nav").load("../modal/nav.html",function () {
+        $('#showUserModal').click(function(){
+            $('#userModal').modal({backdrop: 'static', keyboard: false});
+        });
+    });
+    $("#footer").load("../modal/footer.html");
+</script>
+</body>
+
+</html>

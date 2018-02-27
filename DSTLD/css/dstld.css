@@ -1,0 +1,187 @@
+.repa-home-banner{
+    background: #000000;
+    padding: 30px 30px 20px;
+}
+.repa-home-banner .big{
+    font-family: "Helvetica Neue LT W01_71488914 Bd",Helvetica,Arial,sans-serif!important;
+    color: #ffffff;
+    font-size: 48px;
+    letter-spacing:.5px;
+}
+.repa-home-banner  p{
+    color: #ffffff;
+    letter-spacing: .5px;
+}
+.stats h2.big{
+    font-size: 20px;
+    font-family: "Helvetica Neue LT W01_71488914 Bd",Helvetica,Arial,sans-serif!important;
+}
+.learn-more-btn{
+    font-family: "Helvetica Neue LT W01_71488914 Bd",Helvetica,Arial,sans-serif!important;
+    font-size: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 12px 15px;
+    width: 50%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.home-main img{
+    width: 100%;
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+}
+.home-main a{
+    position: relative;
+    display: block;
+}
+.home-main a:hover img{
+    -webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
+    filter: grayscale(0%);
+}
+.home-main a:hover .content-holder h2{
+    opacity: 1;
+}
+.home-main figcaption{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    padding: 50% 20px 20px;
+}
+.content-holder h2{
+    color: #ffffff;
+    font-family: "Helvetica Neue LT W01_71488914 Bd",Helvetica,Arial,sans-serif!important;
+    font-size: 48px;
+    transform: translate(0,-50%);
+    letter-spacing: .5px;
+    margin-top: 0;
+    opacity: 0;
+}
+.home-intro{
+    padding: 20px 30px;
+}
+.home-intro h3{
+    margin-top: 0;
+}
+
+.mantra{
+    background-color: #0A0A0A;
+    padding:40px 30px;
+}
+.logo2 img{
+    width:120px;
+}
+.mantra p{
+    color: #ffffff;
+    letter-spacing: .5px;
+}
+.mantra h1{
+    color: #ffffff;
+    letter-spacing: .5px;
+}
+.mantra h4{
+    color: #ffffff;
+    letter-spacing: .5px;
+    font-size: 14px;
+}
+/** New Arrivals
+ */
+.new-title{
+    font-size:16px;
+    margin-top: 20px;
+}
+.new-arrivals ul{
+    border-bottom: none;
+}
+.new-arrivals ul li{
+    width: inherit;
+    border: 0;
+    display: inline-block;
+    float: none;
+}
+.new-arrivals ul li a{
+    border: 0;
+    margin-right: 0px;
+    padding: 5px 3px;
+    font-size: 10px;
+    font-weight: 700;
+    color: #000000;
+    font-family: "Helvetica Neue LT W01_71488914 Bd",Helvetica,Arial,sans-serif!important;
+}
+.new-arrivals ul li a:hover{
+    border: 0;
+    background-color: transparent;!important;
+    border: 0!important;
+    padding: 5px 3px;
+    text-decoration: none;
+}
+/** product-img
+ */
+
+
+.product {
+    margin: 0 0 40px;
+    position: relative;
+    vertical-align: top;
+}
+.img{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    width: 100%;
+}
+.product .img img {
+    -webkit-backface-visibility: hidden;
+    top: 0;
+    z-index: 2;
+    width: 120%;
+    left: -10%;
+}
+.product-img{
+    position: absolute;
+}
+.coming-soon{
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    position: absolute;
+    background-color: rgba(0,0,0,.3);
+    text-align: center;
+}
+.coming-soon h2{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #ffffff;
+    letter-spacing: .5px;
+    line-height: 1.2;
+}
+.product-content{
+    padding: 10px 0;
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    font-family: "Helvetica Neue LT W01_35 Thin",Helvetica,Arial,sans-serif!important;
+}
+
+.product-name{
+    font-weight: 700;
+}
+.product-content .color{
+    text-transform: capitalize;
+    line-height: 1.2;
+    color: #000000;
+}
+.product-content .strike{
+    font-size: 13px;
+    text-decoration: line-through;
+    line-height: 1.5px;
+    letter-spacing: normal;
+}

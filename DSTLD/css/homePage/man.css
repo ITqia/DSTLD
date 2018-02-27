@@ -1,0 +1,357 @@
+/**
+    初始化
+ */
+*{
+     margin: 0px;
+     padding:0px;
+ }
+body{
+    font-family:"Helvetica Neue LT W01_35 Thin";
+    font-size:12px;
+    line-height:1.5;
+    color:#0a0a0a;
+    background:#fff;
+}
+h1, h2, h3, h4,b {
+    font-family: "Helvetica Neue LT W01_71488914 Bd",Helvetica,Arial,sans-serif!important;
+    font-weight: 700;
+}
+p{
+    font-family: "Helvetica Neue LT W01_35 Thin",Helvetica,Arial,sans-serif!important;
+}
+.btn,.modal-content,form .underline{
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+/**
+    导航栏
+ */
+ .nav > li .dropdown-menu {
+    margin: 0;
+ }
+.nav > li:hover .dropdown-menu {
+    display: block;
+}
+.banner{
+    width: 100%;
+    height: 122px;
+    background-color: #000000;
+    padding: 30px;
+}
+.banner p{
+    color: #ffffff;
+}
+p.big{
+    font-size: 16px;
+}
+.navbar{
+    margin-bottom:0;
+}
+.logo{
+    background: url("../../assets/dstld-logo.png") center center/150px 25px no-repeat;
+    width: 180px;
+    display: block;
+}
+.navbar-default{
+    background: #ffffff!important;
+}
+.navbar-right{
+    margin: 0;
+}
+/**
+ content
+ */
+.content{
+    padding-top: 50px;
+}
+a.btn-white{
+    margin-top: 13px;
+}
+.btn-white{
+    color: #000000;
+    background-color: #ffffff;
+}
+.collection-banner{
+    max-height: 450px;
+    overflow: hidden;
+}
+.collection-description{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.collection-banner > img{
+    width: 100%;
+    height: 321px;
+}
+.collection-name{
+    margin-bottom: 0;
+    font-weight: 700;
+    margin-top: 30px;
+    font-size: 24px;
+    line-height: 1.2;
+}
+.collection-description-text{
+    padding: 0;
+    margin-top: 30px;
+}
+.collection-description-text > p{
+    color: #000;
+}
+
+/**
+    footer
+ */
+footer{
+    padding: 30px;
+    clear: both;
+    width: 100%;
+    height: 570px;
+    text-align: center;
+}
+.repa-footer-container{
+    background: #000000;
+    padding: 30px;
+}
+.repa-footer-container h1{
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 10px;
+    text-align: left;
+ }
+.repa-footer-container h3{
+    letter-spacing: .5px;
+    font-size: 18px;
+    color: #bbb;
+    text-align: left;
+}
+.starts{
+    display: flex;
+    flex-direction: column;
+}
+.start b{
+    color: #585858;
+    font-size: 24px;
+    font-weight: 700;
+}
+.start p{
+    color: #585858;
+    font-size: 14px;
+    font-weight: 700;
+}
+.footer-email-signup{
+    clear: both;
+    padding-top: 3px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.footer-email-signup h2{
+    font-size: 16px;
+    margin-top:20px;
+    margin-bottom: 10px;
+}
+
+.footer-email-signup input.underline{
+    background:0 0;
+    box-shadow: none;
+    padding: 5px;
+    border: none!important;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #aaaaaa!important;
+    margin-bottom: 15px;
+}
+.footer-email-signup input.underline:focus{
+    box-shadow: none;
+    border-bottom: 1px solid #000000!important;
+}
+.footer-email-signup .col-sm-6{
+    padding-left: 0px;
+}
+.footer-email-signup .col-md-8{
+     padding-left: 0px;
+ }
+.btn-black{
+    color: #ffffff;
+    background-color: #000000;
+}
+.singBtn{
+    padding-left: 0px;
+}
+.singBtn .btn{
+    width: 100%;
+}
+label{
+    display: inline-block;
+}
+.gender-col{
+    padding:0;
+    text-align: left;
+    position: relative;
+    left: -2px;
+    bottom: 2px;
+}
+
+.footer-nav{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.footer-nav p{
+    display: inline;
+}
+.footer-nav a,.footer-text a{
+    display: inline;
+    color: #0A0A0A;
+    text-decoration: none;
+}
+.footer-text span{
+    color: #888888;
+}
+/**
+    join/Login moodal
+ */
+#userModal .modal-content{
+    background: url("../../assets/new-user-modal-bg-womens.jpg") right/cover no-repeat;
+    padding: 20px;
+}
+#userModal .form-holder{
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+#userModal h1{
+    font-size: 24px;
+    font-weight: 100;
+    margin-top: 0;
+}
+#userModal .modal-body{
+    padding: 0;
+}
+#userModal .row{
+    margin: 0;
+}
+#userModal .col-sm-7{
+    background: #ffffff;
+    padding: 0;
+}
+form .underline{
+    border: none!important;
+    border-bottom: 1px solid #AAA!important;
+    box-shadow: none;
+    padding: 5px;
+}
+form .underline:focus{
+    border: none!important;
+    border-bottom: 1px solid #000000!important;
+    box-shadow: none;
+}
+form .btn-block:hover{
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    color: #fff;
+}
+.social-auth{
+    margin-left: -15px!important;
+    margin-right: -15px!important;
+}
+.btn-fb {
+    background: #3B5998;
+    color: #fff;
+}
+.btn-fb:hover {
+    background: #224b98;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    color: #fff;
+}
+.btn-google{
+    background: #dd4b39;
+    color: #fff;
+}
+.btn-google:hover{
+    background: #dd2a16;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    color: #fff;
+}
+.no-padding{
+    padding: 0;
+}
+.btn-gray{
+    background: #b9b9b9;
+    color: #fff;
+}
+.close-white img{
+    width: 15px;
+    height: 15px;
+}
+.pull-right{
+    float: right;!important;
+}
+#login .col-sm-12{
+    padding: 0;
+}
+#login a{
+    color: #cfcfcf;
+}
+
+/**
+    响应式设置
+ */
+@media (max-width: 420px) {
+    .repa-banner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .repa-footer-container{
+        padding: 0;
+    }
+    .starts{
+        display: flex;
+        flex-direction: row;
+    }
+}
+/** product list
+ */
+.product{
+    margin-bottom: 40px;
+}
+.product .img{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.product-title{
+    font-size:16px;
+    font-weight: 700;
+    font-family: "Helvetica Neue LT W01_71488914 Bd",Helvetica,Arial,sans-serif!important;
+    letter-spacing: .5px;
+}
+.square-img{
+    width: 120%;
+    left: -10%;
+    z-index: 2;
+}
+.bg-img{
+    position: relative!important;
+    z-index: 1!important;
+}
+.product .img img{
+    position: absolute;
+}
+.product .img img:first-of-type{
+    z-index: 3;
+}
+.product .img img:first-of-type:hover{
+    opacity: 0;
+    animation: all 1s ease;
+}
+.product-content{
+    padding: 10px 0;
+}
+.product-content .name{
+    font-weight: 700;
+}
+.pull-right{
+    float: right!important;
+}

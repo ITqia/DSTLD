@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Man</title>
+    <link rel="stylesheet" href="../../bootstrap.min.css">
+    <script src="../../jquery-3.2.1.min.js"></script>
+    <script src="../../bootstrap.min.js"></script>
+    <script src="../../angular.min.js"></script>
+    <link rel="stylesheet" href="../../css/modal/modal.css"/>
+    <script src="../../js/myCtrlModal.js"></script>
+    <link  rel="stylesheet" href="../../css/homePage/man.css"/>
+</head>
+<body>
+    <!--join/login modal-->
+    <div class="modal fade" ng-app="app" id="userModal">
+    <div class="modal-dialog" ng-controller="MyCtrl" ng-model="isShow">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close close-white" data-dismiss="modal" aria-label="Close" ng-click="isShow='LOGIN'">
+                    <img id="img-close" aria-hidden="true" src="../../assets/icon-close-white-308ae050a896916dd8c42f9426025f6a.png"></img>
+                </button>
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="form-holder">
+                            <div>
+                                <form ng-hide=" isShow!='LOGIN' ">
+                                    <h1>SIGN UP AND ENJOY 10% OFF </h1>
+                                    <p>DSTLD strips away excess, impurities, and retail go-betweens, offering men &amp; women of style luxe premium denim &amp; other high-caliber essentials – free of the standard 4-7x markup.</p>
+                                    <br>
+                                    <div class="form-group">
+                                        <input class="form-control underline" placeholder="Email" required="required" type="email" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="btn btn-block btn-black btn--raised" value="NEXT" type="submit"/>
+                                    </div>
+                                </form>
+                                <form id="login" ng-hide="isShow=='LOGIN'">
+                                    <h1>Login</h1>
+                                    <br>
+                                    <div class="form-group">
+                                        <input class="form-control underline" placeholder="Email" required="required" type="email" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control underline" placeholder="Password" required="required" type="email" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="btn btn-block btn-black btn--raised" value="LOGIN" type="submit"/>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <a class="pull-right">Forgot password?</a>
+                                        </div>
+                                    </div>
+                                </form>
+                                <br>
+                                <p>OR JOIN WITH...</p>
+                                <div class="row social-auth">
+                                    <div class="col-sm-6 col-xs-12">
+                                        <a class="btn btn-block btn-fb">
+                                            <span class="fa"></span>
+                                            &nbsp; FACEBOOK
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-6 col-xs-12">
+                                        <a class="btn btn-block btn-google">
+                                            <span class="fa"></span>
+                                            &nbsp; GOOGLE+
+                                        </a>
+                                    </div>
+                                </div>
+                                <br>
+                                <p>ALREADY HAVE AN ACCOUNT?</p>
+                                <br>
+                                <div class="row no-padding">
+                                    <a class="btn btn-block btn-gray" ng-click="isShow='JOIN'">{{isShow}}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- 导航栏-->
+    <div id="nav"></div>
+    <!--content-->
+    <div class="content">
+        <!-- banner(横幅)-->
+        <div class="banner hidden-xs">
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1">
+                    <div class="col-sm-7">
+                        <p class="big">You can now invest in DSTLD</p>
+                        <p>Learn how you can be part of our growth.Join the #retailrebellion</p>
+                    </div>
+                    <div class="col-sm-5">
+                        <a class="btn btn-white">LEARN MORE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- collection-description 作品描述-->
+        <div class="col-md-10 col-md-offset-1 collection-description">
+            <div class="collection-banner hidden-xs">
+                <img src="../../assets/original.jpg"/>
+            </div>
+            <h1 class="collection-name">Mens</h1>
+            <div class="collection-description-text col-md-10">
+                <p>Complete a head to toe look with DSTLD’s contemporary essentials.
+                    We offer must-have mens jeans in a variety of styles and washes,
+                    including mens skinny jeans, slim fit jeans, straight leg jeans, and raw jeans,
+                    and luxury cotton tees.No wardrobe is complete without everyday accessories like
+                    fine leather belts, wallets and hats.
+                </p>
+            </div>
+        </div>
+        <div class="col-sm-10 col-sm-offset-1 col-sm-12 no-padding">
+            <div class="product-title col-sm-12">/ Skinny Slim</div>
+            <div class="col-sm-4 col-lg-4 col-xs-6 product">
+                <div class="img">
+                    <a href="../detail/detail.html">
+                        <img class="square-img" src="../../assets/man/skinny-slim-jeans-in-resin-wash-product-medium%20(1).jpg"/>
+                        <img class="square-img" src="../../assets/man/skinny-slim-jeans-in-resin-wash-product-medium.jpg"/>
+                        <img class="square-img bg-img" src="../../assets/dstld/dstld-loader-c3c41166b90c235fed5f014602ef1d59.gif"/>
+                    </a>
+                </div>
+                <div class="product-content">
+                    <div class="pull-left">
+                        <div class="name">Mens Skinny-Slim Jeans</div>
+                        <div class="color">Dark Wash</div>
+                    </div>
+                    <div class="pull-right">$75</div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-lg-4 col-xs-6 product">
+                <div class="img">
+                    <img class="square-img" src="../../assets/man/skinny-slim-jeans-in-dark-worn-wash-product-medium.jpg"/>
+                    <img class="square-img" src="../../assets/man/skinny-slim-jeans-in-dark-worn-wash-product-medium%20(1).jpg"/>
+                    <img class="square-img bg-img" src="../../assets/dstld/dstld-loader-c3c41166b90c235fed5f014602ef1d59.gif"/>
+                </div>
+                <div class="product-content">
+                    <div class="pull-left">
+                        <div class="name">Mens Skinny-Slim Jeans</div>
+                        <div class="color">Dark Worn</div>
+                    </div>
+                    <div class="pull-right">$75</div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-lg-4 col-xs-6 product">
+                <div class="img">
+                    <img class="square-img" src="../../assets/man/skinny-slim-jeans-in-vintage-grey-product-medium.jpg"/>
+                    <img class="square-img" src="../../assets/man/skinny-slim-jeans-in-vintage-grey-product-medium%20(1).jpg"/>
+                    <img class="square-img bg-img" src="../../assets/dstld/dstld-loader-c3c41166b90c235fed5f014602ef1d59.gif"/>
+                </div>
+                <div class="product-content">
+                    <div class="pull-left">
+                        <div class="name">Mens Skinny-Slim Jeans</div>
+                        <div class="color">Vintage Grey</div>
+                    </div>
+                    <div class="pull-right">$75</div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-lg-4 col-xs-6 product">
+                <div class="img">
+                    <img class="square-img" src="../../assets/man/skinny-slim-jeans-in-charcoal-product-medium.jpg"/>
+                    <img class="square-img" src="../../assets/man/skinny-slim-jeans-in-charcoal-product-medium%20(1).jpg"/>
+                    <img class="square-img bg-img" src="../../assets/dstld/dstld-loader-c3c41166b90c235fed5f014602ef1d59.gif"/>
+                </div>
+                <div class="product-content">
+                    <div class="pull-left">
+                        <div class="name">Mens Skinny-Slim Jeans</div>
+                        <div class="color">Charcoal</div>
+                    </div>
+                    <div class="pull-right">$95</div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-lg-4 col-xs-6 product">
+                <div class="img">
+                    <img class="square-img" src="../../assets/man/skinny-slim-jeans-in-jet-black-product-medium.jpg"/>
+                    <img class="square-img" src="../../assets/man/skinny-slim-jeans-in-jet-black-product-medium%20(1).jpg"/>
+                    <img class="square-img bg-img" src="../../assets/dstld/dstld-loader-c3c41166b90c235fed5f014602ef1d59.gif"/>
+                </div>
+                <div class="product-content">
+                    <div class="pull-left">
+                        <div class="name">Mens Skinny-Slim Jeans</div>
+                        <div class="color">Jet Black</div>
+                    </div>
+                    <div class="pull-right">$75</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-10 col-sm-offset-1 col-sm-12 no-padding">
+            <div class="product-title col-sm-12">/ Leather Moto Jacket</div>
+            <div class="col-sm-4 col-lg-4 col-xs-6 product">
+                <div class="img">
+                    <img class="square-img" src="../../assets/man/mens-leather-moto-jacket-in-black-product-medium.jpg"/>
+                    <img class="square-img" src="../../assets/man/mens-leather-moto-jacket-in-black-product-medium%20(1).jpg"/>
+                    <img class="square-img bg-img" src="../../assets/dstld/dstld-loader-c3c41166b90c235fed5f014602ef1d59.gif"/>
+                </div>
+                <div class="product-content">
+                    <div class="pull-left">
+                        <div class="name">Leather Moto Jacket</div>
+                        <div class="color">Black </div>
+                    </div>
+                    <div class="pull-right">$400</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-10 col-sm-offset-1 col-sm-12 no-padding">
+            <div class="product-title col-sm-12">/ Wool Coat</div>
+            <div class="col-sm-4 col-lg-4 col-xs-6 product">
+                <div class="img">
+                    <img class="square-img" src="../../assets/man/mens-long-wool-coat-in-grey-product-medium.jpg"/>
+                    <img class="square-img" src="../../assets/man/mens-long-wool-coat-in-grey-product-medium%20(1).jpg"/>
+                    <img class="square-img bg-img" src="../../assets/dstld/dstld-loader-c3c41166b90c235fed5f014602ef1d59.gif"/>
+                </div>
+                <div class="product-content">
+                    <div class="pull-left">
+                        <div class="name">Long Wool Coat</div>
+                        <div class="color">Grey </div>
+                    </div>
+                    <div class="pull-right">$250</div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-lg-4 col-xs-6 product">
+                <div class="img">
+                    <img class="square-img" src="../../assets/man/mens-long-wool-coat-in-black-product-medium.jpg"/>
+                    <img class="square-img" src="../../assets/man/mens-long-wool-coat-in-black-product-medium%20(1).jpg"/>
+                    <img class="square-img bg-img" src="../../assets/dstld/dstld-loader-c3c41166b90c235fed5f014602ef1d59.gif"/>
+                </div>
+                <div class="product-content">
+                    <div class="pull-left">
+                        <div class="name">Long Wool Coat</div>
+                        <div class="color">Black </div>
+                    </div>
+                    <div class="pull-right">$250</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-10 col-sm-offset-1 col-sm-12 no-padding">
+            <div class="product-title col-sm-12">/ Denim Jackets</div>
+            <div class="col-sm-4 col-lg-4 col-xs-6 product">
+                <div class="img">
+                    <img class="square-img" src="../../assets/man/mens-denim-jacket-in-dark-vintage-product-medium.jpg"/>
+                    <img class="square-img" src="../../assets/man/mens-denim-jacket-in-dark-vintage-product-medium%20(1).jpg"/>
+                    <img class="square-img bg-img" src="../../assets/dstld/dstld-loader-c3c41166b90c235fed5f014602ef1d59.gif"/>
+                </div>
+                <div class="product-content">
+                    <div class="pull-left">
+                        <div class="name">Denim Jacket</div>
+                        <div class="color">Dark Vintege </div>
+                    </div>
+                    <div class="pull-right">$95</div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-lg-4 col-xs-6 product">
+                <div class="img">
+                    <img class="square-img" src="../../assets/man/mens-denim-jacket-in-black-product-medium.jpg"/>
+                    <img class="square-img" src="../../assets/man/mens-denim-jacket-in-black-product-medium%20(1).jpg"/>
+                    <img class="square-img bg-img" src="../../assets/dstld/dstld-loader-c3c41166b90c235fed5f014602ef1d59.gif"/>
+                </div>
+                <div class="product-content">
+                    <div class="pull-left">
+                        <div class="name">Denim Jacket</div>
+                        <div class="color">Black </div>
+                    </div>
+                    <div class="pull-right">$95</div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-lg-4 col-xs-6 product">
+                <div class="img">
+                    <img class="square-img" src="../../assets/man/mens-denim-jacket-in-light-wash-product-medium.jpg"/>
+                    <img class="square-img" src="../../assets/man/mens-denim-jacket-in-light-wash-product-medium%20(1).jpg"/>
+                    <img class="square-img bg-img" src="../../assets/dstld/dstld-loader-c3c41166b90c235fed5f014602ef1d59.gif"/>
+                </div>
+                <div class="product-content">
+                    <div class="pull-left">
+                        <div class="name">Denim Jacket</div>
+                        <div class="color">Light Wash </div>
+                    </div>
+                    <div class="pull-right">$95</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-10 col-sm-offset-1 col-sm-12 no-padding">
+            <div class="product-title col-sm-12">/Hats</div>
+            <div class="col-sm-4 col-lg-4 col-xs-6 product">
+                <div class="img">
+                    <img class="square-img" src="../../assets/man/wool-hat-in-grey-product-medium.jpg"/>
+                    <img class="square-img" src="../../assets/man/wool-hat-in-grey-product-medium%20(1).jpg"/>
+                    <img class="square-img bg-img" src="../../assets/dstld/dstld-loader-c3c41166b90c235fed5f014602ef1d59.gif"/>
+                </div>
+                <div class="product-content">
+                    <div class="pull-left">
+                        <div class="name">Wool Hat</div>
+                        <div class="color">Grey </div>
+                    </div>
+                    <div class="pull-right">$45</div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-lg-4 col-xs-6 product">
+                <div class="img">
+                    <img class="square-img" src="../../assets/man/suede-hat-in-black-product-medium.jpg"/>
+                    <img class="square-img" src="../../assets/man/suede-hat-in-black-product-medium%20(1).jpg"/>
+                    <img class="square-img bg-img" src="../../assets/dstld/dstld-loader-c3c41166b90c235fed5f014602ef1d59.gif"/>
+                </div>
+                <div class="product-content">
+                    <div class="pull-left">
+                        <div class="name">Suede Hat</div>
+                        <div class="color">Black </div>
+                    </div>
+                    <div class="pull-right">$75</div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-lg-4 col-xs-6 product">
+                <div class="img">
+                    <img class="square-img" src="../../assets/man/suede-hat-in-grey-product-medium.jpg"/>
+                    <img class="square-img" src="../../assets/man/suede-hat-in-grey-product-medium%20(1).jpg"/>
+                    <img class="square-img bg-img" src="../../assets/dstld/dstld-loader-c3c41166b90c235fed5f014602ef1d59.gif"/>
+                </div>
+                <div class="product-content">
+                    <div class="pull-left">
+                        <div class="name">Suede Hat</div>
+                        <div class="color">Grey </div>
+                    </div>
+                    <div class="pull-right">$45</div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-lg-4 col-xs-6 product">
+                <div class="img">
+                    <img class="square-img" src="../../assets/man/silk-hat-in-grey-product-medium.jpg"/>
+                    <img class="square-img" src="../../assets/man/silk-hat-in-grey-product-medium%20(1).jpg"/>
+                    <img class="square-img bg-img" src="../../assets/dstld/dstld-loader-c3c41166b90c235fed5f014602ef1d59.gif"/>
+                </div>
+                <div class="product-content">
+                    <div class="pull-left">
+                        <div class="name">Silk Hat</div>
+                        <div class="color">Grey </div>
+                    </div>
+                    <div class="pull-right">$35</div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-lg-4 col-xs-6 product">
+                <div class="img">
+                    <img class="square-img" src="../../assets/man/wool-hat-in-black-product-medium.jpg"/>
+                    <img class="square-img" src="../../assets/man/wool-hat-in-black-product-medium%20(1).jpg"/>
+                    <img class="square-img bg-img" src="../../assets/dstld/dstld-loader-c3c41166b90c235fed5f014602ef1d59.gif"/>
+                </div>
+                <div class="product-content">
+                    <div class="pull-left">
+                        <div class="name">Wool Hat</div>
+                        <div class="color">Black </div>
+                    </div>
+                    <div class="pull-right">$45</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-10 col-sm-offset-1 col-sm-12 no-padding">
+            <div class="product-title col-sm-12">/ Leather Belts</div>
+            <div class="col-sm-4 col-lg-4 col-xs-6 product">
+                <div class="img">
+                    <img class="square-img" src="../../assets/man/mens-standard-leather-belt-in-brown-product-medium.jpg"/>
+                    <img class="square-img" src="../../assets/man/mens-standard-leather-belt-in-brown-product-medium%20(1).jpg"/>
+                    <img class="square-img bg-img" src="../../assets/dstld/dstld-loader-c3c41166b90c235fed5f014602ef1d59.gif"/>
+                </div>
+                <div class="product-content">
+                    <div class="pull-left">
+                        <div class="name">Means Standard Leather Belt</div>
+                        <div class="color">Borwn Leather </div>
+                    </div>
+                    <div class="pull-right">$45</div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-lg-4 col-xs-6 product">
+                <div class="img">
+                    <img class="square-img" src="../../assets/man/mens-standard-leather-belt-in-vintage-brown-product-medium.jpg"/>
+                    <img class="square-img" src="../../assets/man/mens-standard-leather-belt-in-vintage-brown-product-medium%20(1).jpg"/>
+                    <img class="square-img bg-img" src="../../assets/dstld/dstld-loader-c3c41166b90c235fed5f014602ef1d59.gif"/>
+                </div>
+                <div class="product-content">
+                    <div class="pull-left">
+                        <div class="name">Means Standard Leather Belt</div>
+                        <div class="color">Vintage Brown Leather </div>
+                    </div>
+                    <div class="pull-right">$45</div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-lg-4 col-xs-6 product">
+                <div class="img">
+                    <img class="square-img" src="../../assets/man/mens-thin-leather-belt-in-black-product-medium.jpg"/>
+                    <img class="square-img" src="../../assets/man/mens-thin-leather-belt-in-black-product-medium%20(1).jpg"/>
+                    <img class="square-img bg-img" src="../../assets/dstld/dstld-loader-c3c41166b90c235fed5f014602ef1d59.gif"/>
+                </div>
+                <div class="product-content">
+                    <div class="pull-left">
+                        <div class="name">Means Standard Leather Belt</div>
+                        <div class="color">Black Leather </div>
+                    </div>
+                    <div class="pull-right">$45</div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-lg-4 col-xs-6 product">
+                <div class="img">
+                    <img class="square-img" src="../../assets/man/mens-standard-leather-belt-in-black-product-medium.jpg"/>
+                    <img class="square-img" src="../../assets/man/mens-standard-leather-belt-in-black-product-medium%20(1).jpg"/>
+                    <img class="square-img bg-img" src="../../assets/dstld/dstld-loader-c3c41166b90c235fed5f014602ef1d59.gif"/>
+                </div>
+                <div class="product-content">
+                    <div class="pull-left">
+                        <div class="name">Means Standard Leather Belt</div>
+                        <div class="color">Black Leather </div>
+                    </div>
+                    <div class="pull-right">$45</div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-lg-4 col-xs-6 product">
+                <div class="img">
+                    <img class="square-img" src="../../assets/man/mens-thin-leather-belt-in-brown-product-medium.jpg"/>
+                    <img class="square-img" src="../../assets/man/mens-thin-leather-belt-in-brown-product-medium%20(1).jpg"/>
+                    <img class="square-img bg-img" src="../../assets/dstld/dstld-loader-c3c41166b90c235fed5f014602ef1d59.gif"/>
+                </div>
+                <div class="product-content">
+                    <div class="pull-left">
+                        <div class="name">Means Standard Leather Belt</div>
+                        <div class="color">Black Leather </div>
+                    </div>
+                    <div class="pull-right">$45</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-10 col-sm-offset-1 col-sm-12 no-padding">
+            <div class="product-title col-sm-12">/ Wallets</div>
+            <div class="col-sm-4 col-lg-4 col-xs-6 product">
+                <div class="img">
+                    <img class="square-img" src="../../assets/man/mens-leather-chain-wallet-in-black-product-medium.jpg"/>
+                    <img class="square-img" src="../../assets/man/mens-leather-chain-wallet-in-black-product-medium%20(1).jpg"/>
+                    <img class="square-img bg-img" src="../../assets/dstld/dstld-loader-c3c41166b90c235fed5f014602ef1d59.gif"/>
+                </div>
+                <div class="product-content">
+                    <div class="pull-left">
+                        <div class="name">Mens Leather Chain Wallet</div>
+                        <div class="color">Black Steerhide Leather</div>
+                    </div>
+                    <div class="pull-right">$65</div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-lg-4 col-xs-6 product">
+                <div class="img">
+                    <img class="square-img" src="../../assets/man/mens-saffiano-leather-bi-fold-wallet-in-black-product-medium.jpg"/>
+                    <img class="square-img" src="../../assets/man/mens-saffiano-leather-bi-fold-wallet-in-black-product-medium%20(1).jpg"/>
+                    <img class="square-img bg-img" src="../../assets/dstld/dstld-loader-c3c41166b90c235fed5f014602ef1d59.gif"/>
+                </div>
+                <div class="product-content">
+                    <div class="pull-left">
+                        <div class="name">Mens Bifold Wallet</div>
+                        <div class="color">Black Saffiano Leather</div>
+                    </div>
+                    <div class="pull-right">$65</div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-lg-4 col-xs-6 product">
+                <div class="img">
+                    <img class="square-img" src="../../assets/man/mens-saffiano-leather-credit-card-holder-in-black-product-medium.jpg"/>
+                    <img class="square-img" src="../../assets/man/mens-saffiano-leather-credit-card-holder-in-black-product-medium%20(1).jpg"/>
+                    <img class="square-img bg-img" src="../../assets/dstld/dstld-loader-c3c41166b90c235fed5f014602ef1d59.gif"/>
+                </div>
+                <div class="product-content">
+                    <div class="pull-left">
+                        <div class="name">Mens Leather Chain Holder Wallet</div>
+                        <div class="color">Black Saffiano Leather</div>
+                    </div>
+                    <div class="pull-right">$35</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-10 col-sm-offset-1 col-sm-12 no-padding">
+            <div class="product-title col-sm-12">/ Leather Moto Jacket</div>
+            <div class="col-sm-4 col-lg-4 col-xs-6 product">
+                <div class="img">
+                    <img class="square-img" src="../../assets/man/cotton-paisley-bandana-in-black-product-medium.jpg"/>
+                    <img class="square-img" src="../../assets/man/cotton-paisley-bandana-in-black-product-medium%20(1).jpg"/>
+                    <img class="square-img bg-img" src="../../assets/dstld/dstld-loader-c3c41166b90c235fed5f014602ef1d59.gif"/>
+                </div>
+                <div class="product-content">
+                    <div class="pull-left">
+                        <div class="name">Cotton Paisley Bandana</div>
+                        <div class="color">Black </div>
+                    </div>
+                    <div class="pull-right">$20</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-10 col-sm-offset-1 col-sm-12 no-padding">
+            <div class="product-title col-sm-12">/ Scaves</div>
+            <div class="col-sm-4 col-lg-4 col-xs-6 product">
+                <div class="img">
+                    <img class="square-img" src="../../assets/man/cotton-cashmere-blend-ribbed-scarf-in-black-product-medium.jpg"/>
+                    <img class="square-img" src="../../assets/man/cotton-cashmere-blend-ribbed-scarf-in-black-product-medium%20(1).jpg"/>
+                    <img class="square-img bg-img" src="../../assets/dstld/dstld-loader-c3c41166b90c235fed5f014602ef1d59.gif"/>
+                </div>
+                <div class="product-content">
+                    <div class="pull-left">
+                        <div class="name">Cashmere Blend Ribbed Scarf</div>
+                        <div class="color">Black </div>
+                    </div>
+                    <div class="pull-right">$55</div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-lg-4 col-xs-6 product">
+                <div class="img">
+                    <img class="square-img" src="../../assets/man/cotton-cashmere-blend-ribbed-scarf-in-grey-product-medium.jpg"/>
+                    <img class="square-img" src="../../assets/man/cotton-cashmere-blend-ribbed-scarf-in-grey-product-medium%20(1).jpg"/>
+                    <img class="square-img bg-img" src="../../assets/dstld/dstld-loader-c3c41166b90c235fed5f014602ef1d59.gif"/>
+                </div>
+                <div class="product-content">
+                    <div class="pull-left">
+                        <div class="name">Cashmere Blend Ribbed Scarf</div>
+                        <div class="color">Grey </div>
+                    </div>
+                    <div class="pull-right">$55</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-10 col-sm-offset-1 col-sm-12 no-padding">
+            <div class="product-title col-sm-12">/ Beanies</div>
+            <div class="col-sm-4 col-lg-4 col-xs-6 product">
+                <div class="img">
+                    <img class="square-img" src="../../assets/man/cotton-cashmere-blend-beanie-in-grey-product-medium.jpg"/>
+                    <img class="square-img" src="../../assets/man/cotton-cashmere-blend-beanie-in-grey-product-medium%20(1).jpg"/>
+                    <img class="square-img bg-img" src="../../assets/dstld/dstld-loader-c3c41166b90c235fed5f014602ef1d59.gif"/>
+                </div>
+                <div class="product-content">
+                    <div class="pull-left">
+                        <div class="name">Cashmere Blend Beanie In Grey</div>
+                        <div class="color">Black </div>
+                    </div>
+                    <div class="pull-right">$35</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+
+</body>
+<script>
+    $("#nav").load("../modal/nav.html",function () {
+        $('#userModal').modal({backdrop: 'static', keyboard: false});
+        $('#showUserModal').click(function(){
+            $('#userModal').modal({backdrop: 'static', keyboard: false});
+        });
+    });
+    $("#footer").load("../modal/footer.html");
+</script>
+</html>

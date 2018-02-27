@@ -1,0 +1,49 @@
+.blog-hero{
+    text-align: center;
+    background: url("../assets/blog-hero-womens.jpg") center/cover no-repeat;
+    padding:50px 0;
+}
+.blog-hero-title{
+    color: #ffffff;
+}
+.blog-hero p{
+    color: #ffffff;
+}
+.blog-feature-image{
+    margin-top: 50px;
+    padding: 0 15px;
+    margin-bottom: 8px;
+}
+.content .row{
+    margin: 0;
+}
+.blog-feature-text{
+    padding: 7vw;
+}
+.read-more{
+    text-decoration: none;
+    font-weight: 700;
+    color: #0A0A0A;
+}
+a.read-more:hover{
+    text-decoration: none;
+}
+.read-more img{
+     margin-left: 5px;
+     width: 12px;
+     transition: .2s;
+}
+.text-center{
+    text-align: center;
+}
+/**
+masonry-grid
+ */
+.msonry-grid-content{
+    padding-left: 2%;
+}
+.msonry-grid-text{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+

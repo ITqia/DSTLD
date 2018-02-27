@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Story</title>
+    <link rel="stylesheet" href="../../bootstrap.min.css"/>
+    <script src="../../jquery-3.2.1.min.js"></script>
+    <script src="../../bootstrap.min.js"></script>
+    <script src="../../angular.min.js"></script>
+    <script src="../../js/myCtrlModal.js"></script>
+    <link  rel="stylesheet" href="../../css/modal/modal.css"/>
+    <link rel="stylesheet" href="../../css/story.css"/>
+    <link rel="stylesheet" href="../../font-awesome/css/font-awesome.min.css"/>
+</head>
+<body>
+<!--join/login modal-->
+<div class="modal fade" ng-app="app" id="userModal">
+    <div class="modal-dialog" ng-controller="MyCtrl" ng-model="isShow">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close close-white" data-dismiss="modal" aria-label="Close" ng-click="isShow='LOGIN'">
+                    <img id="img-close" aria-hidden="true" src="../../assets/icon-close-white-308ae050a896916dd8c42f9426025f6a.png"></img>
+                </button>
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="form-holder">
+                            <div>
+                                <form ng-hide=" isShow!='LOGIN' ">
+                                    <h1>SIGN UP AND ENJOY 10% OFF </h1>
+                                    <p>DSTLD strips away excess, impurities, and retail go-betweens, offering men &amp; women of style luxe premium denim &amp; other high-caliber essentials – free of the standard 4-7x markup.</p>
+                                    <br>
+                                    <div class="form-group">
+                                        <input class="form-control underline" placeholder="Email" required="required" type="email" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="btn btn-block btn-black btn--raised" value="NEXT" type="submit"/>
+                                    </div>
+                                </form>
+                                <form id="login" ng-hide="isShow=='LOGIN'">
+                                    <h1>Login</h1>
+                                    <br>
+                                    <div class="form-group">
+                                        <input class="form-control underline" placeholder="Email" required="required" type="email" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control underline" placeholder="Password" required="required" type="email" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="btn btn-block btn-black btn--raised" value="LOGIN" type="submit"/>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <a class="pull-right">Forgot password?</a>
+                                        </div>
+                                    </div>
+                                </form>
+                                <br>
+                                <p>OR JOIN WITH...</p>
+                                <div class="row social-auth">
+                                    <div class="col-sm-6 col-xs-12">
+                                        <a class="btn btn-block btn-fb">
+                                            <span class="fa"></span>
+                                            &nbsp; FACEBOOK
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-6 col-xs-12">
+                                        <a class="btn btn-block btn-google">
+                                            <span class="fa"></span>
+                                            &nbsp; GOOGLE+
+                                        </a>
+                                    </div>
+                                </div>
+                                <br>
+                                <p>ALREADY HAVE AN ACCOUNT?</p>
+                                <br>
+                                <div class="row no-padding">
+                                    <a class="btn btn-block btn-gray" ng-click="isShow='JOIN'">{{isShow}}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 导航栏-->
+<div id="nav"></div>
+<!--content-->
+<div class="content">
+    <!-- banner(横幅)-->
+    <div class="banner hidden-xs">
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1">
+                <div class="col-sm-7">
+                    <p class="big">You can now invest in DSTLD</p>
+                    <p>Learn how you can be part of our growth.Join the #retailrebellion</p>
+                </div>
+                <div class="col-sm-5">
+                    <a class="btn btn-white">LEARN MORE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--story-->
+    <div class="story">
+        <div class="container">
+            <div class="col-sm-10 col-sm-offset-1">
+                <div class="centered-text">
+                    <br>
+                    <br>
+                    <img src="../../assets/dstld-logo.png" width="120px"/>
+                    <br>
+                    <br>
+                    <br>
+                    <p>(dis'tild)</p>
+                    <br>
+                    <h2 class="big">Premium Denim + Essentials.
+                        <br>
+                        No Retail Markup.
+                    </h2>
+                    <br>
+                    <h3>WE ALL BENEFIT FROM THE ABSENCE OF THE UNNECESSARY</h3>
+                    <br>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h3>
+                            <i class="fa fa-filter"></i>
+                            LUXURY, REFINED
+                        </h3>
+                        <p>As our name suggests, we focus on simple design, superior quality, and a pared-down product selection in order to deliver the perfect core wardrobe. We’re inspired by understated, modern style and live by a fundamental, edited color palette: black, white, grey, and denim.</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h3>
+                            <i class="fa fa-arrows-h"></i>
+                            DIRECT TO YOU
+                        </h3>
+                        <p>We forgo middlemen (department stores and boutiques) to offer premium denim and luxury essentials at about 1/3 the traditional retail price. We don’t cut any corners – our products are manufactured in the same factories as notable designer labels.</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h3>
+                            <i class="fa fa-heart"></i>
+                            MORAL FIBER
+                        </h3>
+                        <p>We demand a higher standard not just in our wardrobe, but also in labor practices and conditions. Whenever possible, we employ sustainable materials, natural dyes, and eco-friendly practices and techniques.</p>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="row centered-text">
+                    <img src="../../assets/our-story-5.jpg" width="100%"/>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <h2>Team</h2>
+                    <br>
+                    <br>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <p> Do stylish, high-quality garments require a luxury price tag? For DSTLD co-founders Corey Epstein and Mark Lynn,
+                            the answer is a resounding no.
+                            <br>Epstein and Lynn have always valued a top-quality product and customer experience over
+                            the name on the label of their clothes. But for two guys living in Los Angeles, the denim
+                            capital of the world, they found it impossible to find well-made jeans and go-to essentials
+                            without the premium price tag, so they took matters into their own hands.
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <p>
+                            Epstein, who’s diverse background includes photography, design, creative direction, and consulting, and Lynn, a luxury hospitality and e-commerce aficionado, knew they could build a brand that set them apart from traditional premium labels. A brand that was different, better, and had an edge. A brand for the modern consumer.
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <p>Their distinct vision and progressive platform made it easy to find a multi-talented crew of like-minded
+                            individuals. Modest yet agile, the DSTLD team comes from some of the top brands and companies in the world:
+                            GAP, John Varvatos, Adidas, Revolve, BCBG, Calvin Klein, Deloitte, and Caltech, to name a few. Most of us
+                            left corporate culture to endure the even more demanding startup culture, and we love every minute of it.
+                            <br>We come from all over the globe, but call Los Angeles home.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <img src="../../assets/our-story-founders-2.jpg" width="100%"/>
+                    </div>
+                </div>
+                <br>
+                <p class="centered-text small">DSTLD founders Corey Epstein (left) and Mark Lynn (right)</p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="centered-text">
+                    <h4>Contact Us</h4>
+                    <br>
+                    <h5>Send us a note <a>hello@dstld.la</a></h5>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <h4>Follow @DSTLD</h4>
+                </div>
+                <br>
+                <div class="row">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a ><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a><i class="fa fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footer"></div>
+
+<script>
+    $("#nav").load("../modal/nav.html",function () {
+        $('#showUserModal').click(function(){
+            $('#userModal').modal({backdrop: 'static', keyboard: false});
+        });
+    });
+    $("#footer").load("../modal/footer.html");
+</script>
+
+</body>
+</html>

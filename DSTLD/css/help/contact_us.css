@@ -1,0 +1,18 @@
+.customer-care{
+    margin-top: 60px;
+    margin-bottom:10px;
+}
+.sidebar-menu a{
+    font-family: "Helvetica Neue LT W01_35 Thin",Helvetica,Arial,sans-serif!important;
+    display: block;
+    color: #0A0A0A;
+    padding-bottom: 5px;
+    text-decoration: underline;
+    letter-spacing: .5px;
+}
+.container{
+    margin: 0;
+}
+p a{
+    color: #0A0A0A;
+}

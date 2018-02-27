@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Invest</title>
+    <link rel="stylesheet" href="../../bootstrap.min.css"/>
+    <script src="../../jquery-3.2.1.min.js"></script>
+    <script src="../../bootstrap.min.js"></script>
+    <script src="../../angular.min.js"></script>
+    <script src="../../js/myCtrlModal.js"></script>
+    <link  rel="stylesheet" href="../../css/modal/modal.css"/>
+    <link rel="stylesheet" href="../../css/invest.css"/>
+</head>
+<body>
+<!--join/login modal-->
+<div class="modal fade" ng-app="app" id="userModal">
+    <div class="modal-dialog" ng-controller="MyCtrl" ng-model="isShow">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close close-white" data-dismiss="modal" aria-label="Close" ng-click="isShow='LOGIN'">
+                    <img id="img-close" aria-hidden="true" src="../../assets/icon-close-white-308ae050a896916dd8c42f9426025f6a.png"></img>
+                </button>
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="form-holder">
+                            <div>
+                                <form ng-hide=" isShow!='LOGIN' ">
+                                    <h1>SIGN UP AND ENJOY 10% OFF </h1>
+                                    <p>DSTLD strips away excess, impurities, and retail go-betweens, offering men &amp; women of style luxe premium denim &amp; other high-caliber essentials – free of the standard 4-7x markup.</p>
+                                    <br>
+                                    <div class="form-group">
+                                        <input class="form-control underline" placeholder="Email" required="required" type="email" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="btn btn-block btn-black btn--raised" value="NEXT" type="submit"/>
+                                    </div>
+                                </form>
+                                <form id="login" ng-hide="isShow=='LOGIN'">
+                                    <h1>Login</h1>
+                                    <br>
+                                    <div class="form-group">
+                                        <input class="form-control underline" placeholder="Email" required="required" type="email" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control underline" placeholder="Password" required="required" type="email" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="btn btn-block btn-black btn--raised" value="LOGIN" type="submit"/>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <a class="pull-right">Forgot password?</a>
+                                        </div>
+                                    </div>
+                                </form>
+                                <br>
+                                <p>OR JOIN WITH...</p>
+                                <div class="row social-auth">
+                                    <div class="col-sm-6 col-xs-12">
+                                        <a class="btn btn-block btn-fb">
+                                            <span class="fa"></span>
+                                            &nbsp; FACEBOOK
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-6 col-xs-12">
+                                        <a class="btn btn-block btn-google">
+                                            <span class="fa"></span>
+                                            &nbsp; GOOGLE+
+                                        </a>
+                                    </div>
+                                </div>
+                                <br>
+                                <p>ALREADY HAVE AN ACCOUNT?</p>
+                                <br>
+                                <div class="row no-padding">
+                                    <a class="btn btn-block btn-gray" ng-click="isShow='JOIN'">{{isShow}}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 导航栏-->
+<div id="nav"></div>
+<!--content-->
+<div class="content">
+    <!--banner(横幅)-->
+    <div class="banner-invest">
+        <div class="row stats">
+            <div class="repa-banner col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                <div class="col-sm-5">
+                    <h3>Join our second online publish offering</h3>
+                    <p>Invest now</p>
+                </div>
+                <div class="col-sm-2 stat">
+                    <b>$3M+</b>
+                    <p class="small">raised</p>
+                </div>
+                <div class="col-sm-2 stat">
+                    <b>2,200+</b>
+                    <p class="small">investors</p>
+                </div>
+                <div class="col-sm-2 stat">
+                    <b>$315Bn+</b>
+                    <p class="small">market potenital</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--invest-->
+    <div class="invest">
+        <!--INVEST-->
+        <div class="content-holder row">
+            <div class="block">
+                <div class="centered">
+                    <div class="col-sm-10 col-sm-offset-1 text-center">
+                        <h4 class="white-text">ELEVATE YOUR PROSPECTS. BECOME A PARTNER IN PROGRESS.</h4>
+                        <h1 class="white-text">INVEST</h1>
+                        <h4 class="white-text">WE’RE OFFERING UP SHARES IN DSTLD.</h4>
+                        <br>
+                        <a href="#" class="white-text">
+                            <u>Learn more at SeedInvest</u>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--headline-->
+        <div class="row invest-headline">
+            <div class="col-sm-6 col-sm-offset-3">
+                <br>
+                <br>
+                <br>
+                <h1 class="">The Rules Have Changed, And We're 100% For It.</h1>
+                <br>
+                <h4>FOR THE PAST 80 YEARS, ONLY THE WEALTHIEST 2% OF AMERICANS HAVE BEEN ALLOWED TO INVEST IN STARTUPS IN THE US.</h4>
+                <img src="../../assets/invest/jobs_act-1-94a5f919d693cd6005564182d0212a68.jpg"/>
+                <p>In 2012, as part of the JOBS Act, the SEC voted into law a section called Regulation A+ which allows anyone to invest in startups and grants individuals the chance to support and hold stake in the companies they believe in.</p>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+        <!-- get in on the ground floor.-->
+        <div class="row invest-intro">
+            <div class="block">
+                <div class="centered">
+                    <div class="col-sm-6 col-sm-offset-3 white-text">
+                        <h1>We are inviting our customers and fans to invest in DSTLD.</h1>
+                        <p>We believe this approach to growth – inviting our actual customers and fans to be our backers,
+                            and share in the returns – will result in an unstoppable force: a strong and driven team. A circle of motivated
+                            brand advocate-partners with the energy and tenacity to push DSTLD forward.</p>
+                        <p>It’s not big power-player VCs we need to shine. It’s you - the real, passionate fans who know and love DSTLD.</p>
+                        <br>
+                        <a class="btn bt-stroke-white">
+                            GET IN ON THE GROUND FLOOR
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="br">
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <!-- invest in dstld-->
+        <div class="row invest-mission">
+            <div class="block">
+                <div class="centered">
+                    <div class="col-sm-6 col-sm-offset-3 content-mission">
+                        <figcaption>
+                            <h4>WE’RE DISRUPTING THE $200BN FAST FASHION MARKET WITH FAIRLY PRICED, DIRECT-TO-CONSUMER PREMIUM ESSENTIALS.</h4>
+                            <p>Through a focus on designing modern staples in a fundamental color palette, DSTLD is centered
+                                on a simple yet style-aware way of life for those who believe in fewer, higher quality things.
+                            </p>
+                            <a class="btn bt-stroke-black">
+                                INVEST IN DSTLD
+                            </a>
+                            <br>
+                            <br>
+                        </figcaption>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--founds-->
+        <div class="row founders">
+            <div class="col-sm-10 col-sm-offset-1">
+                <h1>
+                    Founders
+                </h1>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="../../assets/invest/corey-aee8f383c8a1971f27ea8cc77bc82389.jpg"/>
+                        <h4>COREY EPSTEIN</h4>
+                        <p class="small">CO-CEO + CO-FOUNDER</p>
+                        <p class="founds-intro">
+                            Corey leads both team and brand alike, managing DSTLD’s day to day operations while shaping
+                            its broader creative vision. His flair for orchestrating and executing innovative, brand-worthy concepts
+                            is a large part of the company’s creative backbone. Prior to founding DSTLD, Corey ran his own marketing
+                            and web consulting firm, advising clients of all industries on branding, design, development, and strategy.
+                            He moved to a Senior Consultant position at Deloitte, specializing in Retail Strategy and Analytics. He holds
+                            a BBA from Loyola Marymount University and an MBA from UCLA’s Anderson School of Management.
+                        </p>
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="../../assets/invest/mark-a98d9555a1e4f5952c3d7bb38a3376be.jpg"/>
+                        <h4>MARK T. LYNN</h4>
+                        <p class="middle">CO-CEO + CO-FOUNDER</p>
+                        <p class="founds-intro">
+                            Mark’s example-driven leadership helps shape the atmosphere at DSTLD. The Irish born, LA-based entrepreneur
+                            benefits from 15 years’ involvement and influence in solid companies across a wide variety of verticals –
+                            boutique hotels, design-driven real estate development, wine and spirits, and more – seeing several through
+                            to profitable sale. Prior to co-founding DSTLD, Mark co-founded Club W (www.clubw.com), a subscription based e-winery
+                            that has become one of the largest and fastest growing wineries in America.
+                        </p>
+                    </div>
+                </div>
+                <h1>DESIGNER</h1>
+                    <div class="col-sm-10 col-sm-offset-1">
+                    <img src="../../assets/invest/paul-ceadab836a20f43c41781aa40fe2b418.jpg"/>
+                    <h4>PAUL ROUGHLEY</h4>
+                    <p class="middle">DESIGN DIRECTOR</p>
+                    <p class="founds-intro">
+                        Paul has cultivated his remarkable design talent through a broad range of fashion experience,
+                        both in the U.S. and in his native England. His care and expertise with tailoring and fine detail
+                        are the product of nearly 20 years in the apparel space, and epitomize his approach to craftsmanship:
+                        construct and design every garment - be it a leather jacket, a tailored suit, or a basic tee shirt - with
+                        the same level of focus and precision. He cut his teeth in the industry in fashion forecasting before making
+                        the inevitable move to garment design and manufacturing, establishing his niche in denim and contemporary ready
+                        to wear. Early in his career, Paul was recruited by streetwear label Ecko to transform the brand’s athletic persona
+                        into a distinctive contemporary concept, in just two seasons. He moved on to spend a decade as Design Director with
+                        cutting-edge denim label Kill City, a luxury brand inspired by creatives, for creatives. There he oversaw creative
+                        direction - including branding, marketing, advertising, web design, and store design - for Kill City and its five
+                        subsidiary brands.
+                    </p>
+                    <p class="founds-intro">
+                        As DSTLD’s Design Director, Paul guides the DSTLD aesthetic with an eye for subtlety and a flair for the unexpected:
+                        always looking for that little something extra to truly elevate a piece.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <!--invest alongside-->
+        <div class="row invest-investors">
+            <div class="block">
+                <div class="centered white-text">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <h1>Invest Alongside…</h1>
+                        <p>If you’ve ever wanted to know how it feels to invest like a major player, this is your chance to find out.</p>
+                    </div>
+                    <div>
+                        <img src="../../assets/invest/investors-9bfa6bae27b418c95775e5d5a0169839.png"/>
+                        <br>
+                        <a class="btn bt-stroke-white" href="#">INVEST IN DSTLD</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--- quotes-->
+        <div class="row quotes">
+            <div class="col-sm-10 col-sm-offset-1">
+                <br>
+                <br>
+                <br>
+                <h1>What Our Investors Are Saying</h1>
+                <br>
+                <br>
+                <div class="col-sm-10 col-sm-offset-1">
+                    <div class="quote-block">
+                        <p>
+                            “I've been involved w/ branding and product development for years and it takes a lot to "wow" me,
+                            which is exactly what DSTLD did. I bought my first pair of DSTLD jeans around 2 1/2 years ago and they were just different
+                            than any that I've ever owned. I was intrigued - started following DSTLD - news, social, etc. and just fell in love w/ the
+                            company. When the opportunity arose to invest into DSTLD, it was a no-brainer. I just have a really, really
+                            good feeling about it.”
+                        </p>
+                        <h4>SCOTT WILLIAMS</h4>
+                        <h5>President + co-founder of Emisare // Greensboro, NC.</h5>
+                    </div>
+                    <div class="quote-block">
+                        <p>
+                            “It seems wise to invest in a product or company that you are attracted to and personally use. Think Apple, Amazon,
+                            or Netflix. I am almost daily wearing something from DTSLD. It usually means there are many customers out there feeling the same,
+                            and your investment is likely to succeed.”
+                        </p>
+                        <h4>KENNETH JUNG</h4>
+                        <h5>physician + artist // Los Angeles, CA</h5>
+                    </div>
+                    <div class="quote-block">
+                        <p>
+                            “I invested in DSTLD because of the simplicity of the design and the quality of the clothing. Additionally,
+                            the innovative direct to consumer model is very appealing as I consider myself a fashion forward person that dislikes
+                            the traditional store shopping experience. In my mind, this is like comparing today's local vs. industrial food movement.
+                            People are ready for change, for a different way to doing things. I'm all about challenging the status quo and believe
+                            that change requires evolution. DSTLD is doing this exactly! Can't wait to see what's next -- I'm already a brand
+                            ambassador.”
+                        </p>
+                        <h4>CHRISTOPHER CAMPOS</h4>
+                        <h5>Managing Director // New York, NY</h5>
+                    </div>
+                    <div class="quote-block">
+                        <p>
+                            “I've been a big fan of DSTLD for quite some time now. The clothes are dope and I feel connected to the ethos of
+                            sustainability and affordability. The clothing industry is ripe for reimagination and DSTLD is forging that path.
+                            I only see big things ahead for the company which made the investment a no brainer.”
+                        </p>
+                        <h4>JOE CONTE</h4>
+                        <h5>Consultant // San Francisco, CA</h5>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <!---->
+        <!-- invest-cta-->
+        <div class="row invest-cta white-text">
+            <div class="block">
+                <div class="centered">
+                    <div class="col-sm-6 col-sm-offset-3 white-text">
+                        <h1>Invest In DSTLD</h1>
+                        <p>The Reg-A rules have uncovered brand new territory, and we’re among the first to break ground. We hope you will join us on this exciting,
+                            promising mission.
+                        </p>
+                        <br>
+                        <a class="btn bt-stroke-white">
+                            STAKE YOUR CLAIM
+                        </a>
+                        <br>
+                        <br>
+                        <h4>An opportunity that fits you perfectly</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- join-->
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                <h1>Sign Up</h1>
+                <p class="p_text">Sign up to receive investor updates about our Reg A+ campaign.</p>
+                <form>
+                    <div class="col-sm-10 col-sm-offset-1">
+                        <div class="form-group">
+                            <div class="col-sm-9 no-padding">
+                                <input class="form-control" placeholder="join@gmail.com" type="email"/>
+                            </div>
+                            <div class="col-sm-3 no-padding">
+                                <input class="btn btn-block btn-black sub-btn" type="submit" value="JOIN"/>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="footer"></div>
+
+<script>
+    $("#nav").load("../modal/nav.html",function () {
+        $('#showUserModal').click(function(){
+            $('#userModal').modal({backdrop: 'static', keyboard: false});
+        });
+    });
+    $("#footer").load("../modal/footer.html");
+</script>
+</body>
+</html>

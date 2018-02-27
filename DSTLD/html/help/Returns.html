@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Returns</title>
+    <link rel="stylesheet" href="../../bootstrap.min.css"/>
+    <script src="../../jquery-3.2.1.min.js"></script>
+    <script src="../../bootstrap.min.js"></script>
+    <script src="../../angular.min.js"></script>
+    <link  rel="stylesheet" href="../../css/modal/modal.css"/>
+    <link rel="stylesheet" href="../../css/help/returns.css"/>
+    <script src="../../js/myCtrlModal.js"></script>
+</head>
+<body>
+<!--join/login modal-->
+<div class="modal fade" ng-app="app" id="userModal">
+    <div class="modal-dialog" ng-controller="MyCtrl" ng-model="isShow">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close close-white" data-dismiss="modal" aria-label="Close" ng-click="isShow='LOGIN'">
+                    <img id="img-close" aria-hidden="true" src="../../assets/icon-close-white-308ae050a896916dd8c42f9426025f6a.png"></img>
+                </button>
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="form-holder">
+                            <div>
+                                <form ng-hide=" isShow!='LOGIN' ">
+                                    <h1>SIGN UP AND ENJOY 10% OFF </h1>
+                                    <p>DSTLD strips away excess, impurities, and retail go-betweens, offering men &amp; women of style luxe premium denim &amp; other high-caliber essentials – free of the standard 4-7x markup.</p>
+                                    <br>
+                                    <div class="form-group">
+                                        <input class="form-control underline" placeholder="Email" required="required" type="email" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="btn btn-block btn-black btn--raised" value="NEXT" type="submit"/>
+                                    </div>
+                                </form>
+                                <form id="login" ng-hide="isShow=='LOGIN'">
+                                    <h1>Login</h1>
+                                    <br>
+                                    <div class="form-group">
+                                        <input class="form-control underline" placeholder="Email" required="required" type="email" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control underline" placeholder="Password" required="required" type="email" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="btn btn-block btn-black btn--raised" value="LOGIN" type="submit"/>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <a class="pull-right">Forgot password?</a>
+                                        </div>
+                                    </div>
+                                </form>
+                                <br>
+                                <p>OR JOIN WITH...</p>
+                                <div class="row social-auth">
+                                    <div class="col-sm-6 col-xs-12">
+                                        <a class="btn btn-block btn-fb">
+                                            <span class="fa"></span>
+                                            &nbsp; FACEBOOK
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-6 col-xs-12">
+                                        <a class="btn btn-block btn-google">
+                                            <span class="fa"></span>
+                                            &nbsp; GOOGLE+
+                                        </a>
+                                    </div>
+                                </div>
+                                <br>
+                                <p>ALREADY HAVE AN ACCOUNT?</p>
+                                <br>
+                                <div class="row no-padding">
+                                    <a class="btn btn-block btn-gray" ng-click="isShow='JOIN'">{{isShow}}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 导航栏-->
+<div id="nav"></div>
+<div class="content">
+    <div class="customer-care">
+        <div class="container">
+            <div class="col-sm-2 ">
+                <div class="sidebar-menu">
+                    <a href="Shipping.html"><span>Shipping</span></a>
+                    <a href="Returns.html"><span>Returns</span></a>
+                    <a href="FAQ.html"><span>FAQ</span></a>
+                    <a href="Terms.html"><span>Terms</span></a>
+                    <a href="Privacy.html"><span>Privacy</span></a>
+                    <a href="ContactUs.html"><span>Contact Us</span></a>
+                </div>
+            </div>
+            <div class="col-sm-7 col-sm-offset-1">
+                <h4 class="title">Returns & Exchanges</h4>
+                <p>Return Policy:</p>
+                <p>Customers may return items for a full refund or store credit within 30 days of purchase.
+                    If you purchased expedited shipping (UPS Next Day or UPS 2 Day), unfortunately we will not be able to issue a refund or store
+                    credit for that amount. Please ensure that your returned items are not worn, washed, or damaged. We ask for the return to be
+                    processed on the site under the "account" down to the "returns" field on DSTLD.com. After that is processed the return label label
+                    will be emailed directly to you. Returns cannot be processed on a mobile device.
+                </p>
+                <p>If you wish to exchange your item(s) for a new size, color, style, etc. please select “store credit” when processing
+                    your return. We will issue store credit to your account within 2 business days after you place your return package in the mail,
+                    and you may use that store credit to re-order the new items. Store credit from Returns never expires or loses value. If your item
+                    is not received within 30 days, or is received damaged, we will charge your original form of payment. RETURNS FOR REFUND:
+                    If you wish to return your item(s) and receive a refund, select “refund” when processing your return. Please allow up to 30 days
+                    for it to be processed and the amount credited back to your original form of payment (this allows time for the items to get shipped
+                    back to our facility, inspected by our warehouse staff, and processed back into stock).
+                </p>
+                <p>International Returns:</p>
+                <p>For international orders customers are responsible for covering the cost of shipping a return back to us.
+                    Returns must be made within 45 days of the order date, please send your return to the address listed below.
+                    We are unable to issue a refund or store credit for the cost of international shipping, only the value of the goods you purchased.
+                    If you wish to return your item(s) and receive a refund, select “refund” when processing your return. All returns will
+                    be completed within 5-7 business days of the warehouse delivery. our return shipment to the following address:
+                </p>
+                <p>&nbsp;</p>
+                <p>DSTLD<br>
+                    Attn: Returns<br>
+                    5959 Randolph Street<br>
+                    Commerce, CA 90040
+                </p>
+                <p>Walk-in returns will not be accepted</p>
+                <br>
+                <p>Return Conditions</p>
+                <p>Returned items must be unwashed/unworn with original tags and packaging and free of any odors or pet hair.
+                    (By unworn, we mean items may not be worn for an extensive “outing.” You are of course welcome and encouraged to try DSTLD
+                    on for size at home.) * Returns must be received at our address within 30 days from the date of
+                    transaction. * If you return an item that does not meet the above criteria; we can arrange to have it shipped back to
+                    you at your cost. Please contact hello@dstld.la for more information. (<span class="underline">View customer service hours here<span>)
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer"></div>
+
+<script>
+    $("#nav").load("../modal/nav.html",function () {
+        $('#showUserModal').click(function(){
+            $('#userModal').modal({backdrop: 'static', keyboard: false});
+        });
+    });
+    $("#footer").load("../modal/footer.html");
+</script>
+
+</body>
+
+</html>

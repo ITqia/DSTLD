@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Moral Fiber | DSTLD</title>
+    <link rel="stylesheet" href="../../bootstrap.min.css"/>
+    <script src="../../jquery-3.2.1.min.js"></script>
+    <script src="../../bootstrap.min.js"></script>
+    <script src="../../angular.min.js"></script>
+    <script src="../../js/myCtrlModal.js"></script>
+    <link  rel="stylesheet" href="../../css/modal/modal.css"/>
+    <link rel="stylesheet" href="../../css/moral-fiber.css"/>
+</head>
+<body>
+<!--join/login modal-->
+<div class="modal fade" ng-app="app" id="userModal">
+    <div class="modal-dialog" ng-controller="MyCtrl" ng-model="isShow">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close close-white" data-dismiss="modal" aria-label="Close" ng-click="isShow='LOGIN'">
+                    <img id="img-close" aria-hidden="true" src="../../assets/icon-close-white-308ae050a896916dd8c42f9426025f6a.png"></img>
+                </button>
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="form-holder">
+                            <div>
+                                <form ng-hide=" isShow!='LOGIN' ">
+                                    <h1>SIGN UP AND ENJOY 10% OFF </h1>
+                                    <p>DSTLD strips away excess, impurities, and retail go-betweens, offering men &amp; women of style luxe premium denim &amp; other high-caliber essentials – free of the standard 4-7x markup.</p>
+                                    <br>
+                                    <div class="form-group">
+                                        <input class="form-control underline" placeholder="Email" required="required" type="email" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="btn btn-block btn-black btn--raised" value="NEXT" type="submit"/>
+                                    </div>
+                                </form>
+                                <form id="login" ng-hide="isShow=='LOGIN'">
+                                    <h1>Login</h1>
+                                    <br>
+                                    <div class="form-group">
+                                        <input class="form-control underline" placeholder="Email" required="required" type="email" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control underline" placeholder="Password" required="required" type="email" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="btn btn-block btn-black btn--raised" value="LOGIN" type="submit"/>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <a class="pull-right">Forgot password?</a>
+                                        </div>
+                                    </div>
+                                </form>
+                                <br>
+                                <p>OR JOIN WITH...</p>
+                                <div class="row social-auth">
+                                    <div class="col-sm-6 col-xs-12">
+                                        <a class="btn btn-block btn-fb">
+                                            <span class="fa"></span>
+                                            &nbsp; FACEBOOK
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-6 col-xs-12">
+                                        <a class="btn btn-block btn-google">
+                                            <span class="fa"></span>
+                                            &nbsp; GOOGLE+
+                                        </a>
+                                    </div>
+                                </div>
+                                <br>
+                                <p>ALREADY HAVE AN ACCOUNT?</p>
+                                <br>
+                                <div class="row no-padding">
+                                    <a class="btn btn-block btn-gray" ng-click="isShow='JOIN'">{{isShow}}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 导航栏-->
+<div id="nav"></div>
+
+<!--content -->
+<div class="content">
+    <!-- banner(横幅)-->
+    <div class="banner hidden-xs">
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1">
+                <div class="col-sm-7">
+                    <p class="big">You can now invest in DSTLD</p>
+                    <p>Learn how you can be part of our growth.Join the #retailrebellion</p>
+                </div>
+                <div class="col-sm-5">
+                    <a class="btn btn-white">LEARN MORE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="moral">
+        <div class="row no-margin" style="margin-left: 0">
+            <div class="col-sm-10 col-sm-offset-1">
+                <div class="col-sm-5">
+                    <h1>Moral Fiber</h1>
+                    <h3>WE STAND FOR BETTER ETHICS IN THE APPAREL INDUSTRY</h3>
+                    <br>
+                    <br>
+                    <p>With the help of a small circle of socially responsible suppliers, DSTLD maintains high standards for people and apparel alike.</p>
+                    <br>
+                    <br>
+                    <h3>NO SWEATSHOPS</h3>
+                    <p>We demand a higher standard not just in denim, but also in labor practices and conditions. We carefully screen our suppliers, laundries, and factories to ensure our products are fairly manufactured and 100% sweatshop-free.</p>
+                    <h3>ECO-FRIENDLY FABRICS</h3>
+                    <p>Our line is equipped with top-of-the-line premium fabrics, many of them eco-friendly and fully sustainable. When possible, we use natural dyes and softening techniques to achieve our denim’s striking range of hues and irresistibly soft handfeel.</p>
+                    <h3>ETHICAL PRICING</h3>
+                    <p>The goal of our direct-to-you, middleman-free stance is not only to filter out extra steps and excess markup. It is also an effort to preserve the integrity of our line and honor our relationship with clients.</p>
+                </div>
+                <div class="col-sm-offset-1 col-sm-6 col-xs-12">
+                    <img src="../../assets/moral-fiber.jpg" width="100%"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footer"></div>
+
+<script>
+    $("#nav").load("../modal/nav.html",function () {
+        $('#showUserModal').click(function(){
+            $('#userModal').modal({backdrop: 'static', keyboard: false});
+        });
+    });
+    $("#footer").load("../modal/footer.html");
+</script>
+
+</body>
+</html>

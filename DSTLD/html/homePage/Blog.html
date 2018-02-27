@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+    <link rel="stylesheet" href="../../bootstrap.min.css"/>
+    <script src="../../jquery-3.2.1.min.js"></script>
+    <script src="../../bootstrap.min.js"></script>
+    <script src="../../angular.min.js"></script>
+    <script src="../../js/myCtrlModal.js"></script>
+    <link  rel="stylesheet" href="../../css/modal/modal.css"/>
+    <link rel="stylesheet" href="../../css/blog.css"/>
+</head>
+<body>
+<!--join/login modal-->
+<div class="modal fade" ng-app="app" id="userModal">
+    <div class="modal-dialog" ng-controller="MyCtrl" ng-model="isShow">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close close-white" data-dismiss="modal" aria-label="Close" ng-click="isShow='LOGIN'">
+                    <img id="img-close" aria-hidden="true" src="../../assets/icon-close-white-308ae050a896916dd8c42f9426025f6a.png"></img>
+                </button>
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="form-holder">
+                            <div>
+                                <form ng-hide=" isShow!='LOGIN' ">
+                                    <h1>SIGN UP AND ENJOY 10% OFF </h1>
+                                    <p>DSTLD strips away excess, impurities, and retail go-betweens, offering men &amp; women of style luxe premium denim &amp; other high-caliber essentials – free of the standard 4-7x markup.</p>
+                                    <br>
+                                    <div class="form-group">
+                                        <input class="form-control underline" placeholder="Email" required="required" type="email" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="btn btn-block btn-black btn--raised" value="NEXT" type="submit"/>
+                                    </div>
+                                </form>
+                                <form id="login" ng-hide="isShow=='LOGIN'">
+                                    <h1>Login</h1>
+                                    <br>
+                                    <div class="form-group">
+                                        <input class="form-control underline" placeholder="Email" required="required" type="email" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control underline" placeholder="Password" required="required" type="email" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="btn btn-block btn-black btn--raised" value="LOGIN" type="submit"/>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <a class="pull-right">Forgot password?</a>
+                                        </div>
+                                    </div>
+                                </form>
+                                <br>
+                                <p>OR JOIN WITH...</p>
+                                <div class="row social-auth">
+                                    <div class="col-sm-6 col-xs-12">
+                                        <a class="btn btn-block btn-fb">
+                                            <span class="fa"></span>
+                                            &nbsp; FACEBOOK
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-6 col-xs-12">
+                                        <a class="btn btn-block btn-google">
+                                            <span class="fa"></span>
+                                            &nbsp; GOOGLE+
+                                        </a>
+                                    </div>
+                                </div>
+                                <br>
+                                <p>ALREADY HAVE AN ACCOUNT?</p>
+                                <br>
+                                <div class="row no-padding">
+                                    <a class="btn btn-block btn-gray" ng-click="isShow='JOIN'">{{isShow}}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 导航栏-->
+<div id="nav"></div>
+
+<div class="content">
+    <div class="blog-hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3">
+                    <h1 class="blog-hero-title">BLOG</h1>
+                    <p>The latest news & updates of all things DSTLD</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner(横幅)-->
+    <div class="banner hidden-xs">
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1">
+                <div class="col-sm-7">
+                    <p class="big">You can now invest in DSTLD</p>
+                    <p>Learn how you can be part of our growth.Join the #retailrebellion</p>
+                </div>
+                <div class="col-sm-5">
+                    <a class="btn btn-white">LEARN MORE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="blog-feature-content">
+        <div class="row">
+            <div class="col-sm-5 blog-feature-text">
+                <h1>Behind DSTLD: Meet Our Leaders</h1>
+                <p><i>Dec 14, 2017</i></p>
+                <p>
+                    Do stylish, high-quality garments require a luxury price tag? For us the answer is a resounding no. DSTLD was founded in 2014 to create ethically produced, well-crafted clothing that isn't marked up due to wholesale partners and retail middlemen.
+                </p>
+                <a class="read-more" href="#">Read More <img src="../../assets/icon-arrow-right-alt-30ee5e014fe54fc436873d6305f0caf5.png"/></a>
+            </div>
+            <div class="col-sm-7 blog-feature-image">
+                <a href="#">
+                    <img src="../../assets/original_1.jpg" width="100%"/>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-7 ">
+                <img src="../../assets/original_2.jpg" width="100%"/>
+            </div>
+            <div class="col-sm-5 blog-feature-text">
+                <h1>The Creative Class: Pia Riverola</h1>
+                <p><i>Nov 15, 2017</i></p>
+                <p>
+                    Wouldn’t life look a lot better through a rose tinted lens? Pia Riverola seems to think so. The Barcelona born photographer, and recent Los Angeles transplant, has a serious case of wanderlust. We first came across Pia through her Instagram account, and were struck by her ability to simplify her photographs down to their essentials - clean lines, geometric shapes, and spectacular colors. And apparently we’re not the only ones.   </p>
+                <a class="read-more" href="#">Read More <img src="../../assets/icon-arrow-right-alt-30ee5e014fe54fc436873d6305f0caf5.png"/></a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <br>
+        <h4 class="text-center">LATEST POSTS</h4>
+        <br>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6 msonry-grid-content">
+            <img src="../../assets/original_3.jpg" style="width: 100%"/>
+            <div class="msonry-grid-text">
+                <h4>DSTLD'S ESSENTIAL MIX: OCTOBER 2017</h4>
+                <p><i>Oct 30, 2017</i></p>
+                <p>
+                    Is it fall yet? This month, our playlist reflects the endless summer we've been experiencing here in Los Angeles with music by Shallou,
+                    Classixx, Mark Ronson, and more.
+                </p>
+                <a class="read-more" href="#">Read More <img src="../../assets/icon-arrow-right-alt-30ee5e014fe54fc436873d6305f0caf5.png"/></a>
+            </div>
+            <div class="msonry-grid-text">
+                <h4>PREMIUM DENIM DICTIONARY: YOUR A-Z GUIDE</h4>
+                <p><i>Sep 05, 2017</i></p>
+                <p>
+                    Jeans are just jeans, right? Well actually… as is true in most cases, you quite literally get what you pay for.
+                    Premium denim carries with it much more than just a higher price tag. But what, exactly, is the difference between
+                    high-end denim and your average fast-fashion pair of jeans? The answers, like premium denim itself, might seem complex,
+                    but are definitely worth familiarizing yourself with. Here, an A-Z guide of some of the most essential denim terms to keep
+                    in mind next time you find yourself in an intense chat about ‘whiskering.’ Spoiler alert: it has nothing to do with cats.
+                </p>
+                <a class="read-more" href="#">Read More <img src="../../assets/icon-arrow-right-alt-30ee5e014fe54fc436873d6305f0caf5.png"/></a>
+            </div>
+            <div class="msonry-grid-text">
+                <h4>DSTLD’S JEAN HISTORY 101</h4>
+                <p><i>Aug 01, 2017</i></p>
+                <p>
+                    Today, jeans are a global symbol - garments with equal appeal across class lines, and across borders.
+                    From the legs of ranchers to rock stars and vintage collectors to designer devotees, no other piece of
+                    clothing is as ubiquitous or as universally cool as a good pair of jeans.
+                </p>
+                <a class="read-more" href="#">Read More <img src="../../assets/icon-arrow-right-alt-30ee5e014fe54fc436873d6305f0caf5.png"/></a>
+            </div>
+            <div class="msonry-grid-text">
+                <h4>BEHIND DSTLD: THE STAPLE</h4>
+                <p><i>Jul 14, 2017</i></p>
+                <p>
+                    TWhat’s in a staple? More specifically, what’s in a staple wardrobe? For some,
+                    it means embracing and acquiring of the moment trends, while for others it means only having the core essentials.
+                    A closet staple’s definition is often grounded in subjectivity, taking on different meanings for different people for various reasons.
+                </p>
+                <a class="read-more" href="#">Read More <img src="../../assets/icon-arrow-right-alt-30ee5e014fe54fc436873d6305f0caf5.png"/></a>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="msonry-grid-text">
+                <h4>THE CREATIVE CLASS: BROOKLYN CARTOONS</h4>
+                <p><i>Oct 12, 2017</i></p>
+                <p>
+                    Meet Brooklyn Cartoons. The Instagram account responsible for shining a satirical light on millennial lifestyle.
+                </p>
+                <a class="read-more" href="#">Read More <img src="../../assets/icon-arrow-right-alt-30ee5e014fe54fc436873d6305f0caf5.png"/></a>
+            </div>
+            <div class="msonry-grid-text">
+                <h4>BEHIND DSTLD: FUNCTIONALITY</h4>
+                <p><i>Oct 12, 2017</i></p>
+                <p>
+                    DSTLD's Design Director Paul Roughley takes us inside the Rose Bowl Flea Market to discuss style, denim and functionality.
+                </p>
+                <a class="read-more" href="#">Read More <img src="../../assets/icon-arrow-right-alt-30ee5e014fe54fc436873d6305f0caf5.png"/></a>
+            </div>
+            <div class="msonry-grid-text">
+                <h4>DSTLD’S ESSENTIAL MIX: SEPTEMBER 2017</h4>
+                <p><i>Sep 22, 2017</i></p>
+                <p>
+                    And we’re back with another mix. This September, we’re listening to music by Bonobo, The Weeknd, Beck, YACHT,
+                    Moby and more. Plus, check out our co-founder and co-CEO Corey Epstein’s Soundcloud mix from this month’s Burning Man Festival.
+                </p>
+                <a class="read-more" href="#">Read More <img src="../../assets/icon-arrow-right-alt-30ee5e014fe54fc436873d6305f0caf5.png"/></a>
+            </div>
+            <div class="msonry-grid-text">
+                <h4>TEN TIPS FOR MINIMALIST INTERIOR DESIGN</h4>
+                <p><i>Sep 22, 2017</i></p>
+                <p>
+                    Image courtesy of Design Milk
+                </p>
+                <a class="read-more" href="#">Read More <img src="../../assets/icon-arrow-right-alt-30ee5e014fe54fc436873d6305f0caf5.png"/></a>
+            </div>
+            <div class="msonry-grid-text">
+                <h4>DSTLD’S ESSENTIAL MIX: AUGUST 2017</h4>
+                <p><i>Aug 17, 2017</i></p>
+                <p>
+                    It’s Thursday, which means Friday’s almost here. Lucky for you, our August playlist just dropped to help get you through the
+                    final stretch of the week. Featuring music by Portugal the Man, Poolside, tUne-yArDs, and more, it’s everything we’re
+                    listening to right now at DSTLD.
+                </p>
+                <a class="read-more" href="#">Read More <img src="../../assets/icon-arrow-right-alt-30ee5e014fe54fc436873d6305f0caf5.png"/></a>
+            </div>
+            <div class="msonry-grid-text">
+                <h4>THE CREATIVE CLASS: RAC</h4>
+                <p><i>Jul 17, 2017</i></p>
+                <p>
+                    RAC wears DSTLD’s Crew Neck Tee in Black and Denim Jacket in Jet Black
+                </p>
+                <a class="read-more" href="#">Read More <img src="../../assets/icon-arrow-right-alt-30ee5e014fe54fc436873d6305f0caf5.png"/></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footer"></div>
+
+<script>
+    $("#nav").load("../modal/nav.html",function () {
+        $('#showUserModal').click(function(){
+            $('#userModal').modal({backdrop: 'static', keyboard: false});
+        });
+    });
+    $("#footer").load("../modal/footer.html");
+</script>
+
+</body>
+</html>

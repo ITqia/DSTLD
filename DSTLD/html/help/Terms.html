@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Terms</title>
+    <link rel="stylesheet" href="../../bootstrap.min.css"/>
+    <script src="../../jquery-3.2.1.min.js"></script>
+    <script src="../../bootstrap.min.js"></script>
+    <script src="../../angular.min.js"></script>
+    <link  rel="stylesheet" href="../../css/modal/modal.css"/>
+    <link rel="stylesheet" href="../../css/help/terms.css"/>
+    <script src="../../js/myCtrlModal.js"></script>
+</head>
+<body>
+<!--join/login modal-->
+<div class="modal fade" ng-app="app" id="userModal">
+    <div class="modal-dialog" ng-controller="MyCtrl" ng-model="isShow">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close close-white" data-dismiss="modal" aria-label="Close" ng-click="isShow='LOGIN'">
+                    <img id="img-close" aria-hidden="true" src="../../assets/icon-close-white-308ae050a896916dd8c42f9426025f6a.png"></img>
+                </button>
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="form-holder">
+                            <div>
+                                <form ng-hide=" isShow!='LOGIN' ">
+                                    <h1>SIGN UP AND ENJOY 10% OFF </h1>
+                                    <p>DSTLD strips away excess, impurities, and retail go-betweens, offering men &amp; women of style luxe premium denim &amp; other high-caliber essentials – free of the standard 4-7x markup.</p>
+                                    <br>
+                                    <div class="form-group">
+                                        <input class="form-control underline" placeholder="Email" required="required" type="email" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="btn btn-block btn-black btn--raised" value="NEXT" type="submit"/>
+                                    </div>
+                                </form>
+                                <form id="login" ng-hide="isShow=='LOGIN'">
+                                    <h1>Login</h1>
+                                    <br>
+                                    <div class="form-group">
+                                        <input class="form-control underline" placeholder="Email" required="required" type="email" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control underline" placeholder="Password" required="required" type="email" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="btn btn-block btn-black btn--raised" value="LOGIN" type="submit"/>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <a class="pull-right">Forgot password?</a>
+                                        </div>
+                                    </div>
+                                </form>
+                                <br>
+                                <p>OR JOIN WITH...</p>
+                                <div class="row social-auth">
+                                    <div class="col-sm-6 col-xs-12">
+                                        <a class="btn btn-block btn-fb">
+                                            <span class="fa"></span>
+                                            &nbsp; FACEBOOK
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-6 col-xs-12">
+                                        <a class="btn btn-block btn-google">
+                                            <span class="fa"></span>
+                                            &nbsp; GOOGLE+
+                                        </a>
+                                    </div>
+                                </div>
+                                <br>
+                                <p>ALREADY HAVE AN ACCOUNT?</p>
+                                <br>
+                                <div class="row no-padding">
+                                    <a class="btn btn-block btn-gray" ng-click="isShow='JOIN'">{{isShow}}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 导航栏-->
+<div id="nav"></div>
+<div class="content">
+    <div class="privacy">
+        <div class="container">
+            <div class="col-sm-2 ">
+                <div class="sidebar-menu">
+                    <a href="Shipping.html"><span>Shipping</span></a>
+                    <a href="Returns.html"><span>Returns</span></a>
+                    <a href="FAQ.html"><span>FAQ</span></a>
+                    <a href="Terms.html"><span>Terms</span></a>
+                    <a href="Privacy.html"><span>Privacy</span></a>
+                    <a href="ContactUs.html"><span>Contact Us</span></a>
+                </div>
+            </div>
+            <div class="col-sm-7 col-sm-offset-1">
+                <h2 class="title">Terms</h2><section class="white-block"><p>CONDITIONS OF USE: Welcome to DSTLD. The services on this site are offered to you by Denim LA Inc., parent company of DSTLD. For the rest of this text, DSTLD will be used, but it is understood that DSTLD is a part of Denim LA Inc. When you use DSTLD ("DSTLD.com", "DSTLD", "we", "our", "us"), you understand you are subject to the following conditions. If you visit or shop at DSTLD.com, you accept and agree to abide by these conditions. Please read them carefully. When you use any current or future DSTLD.com service, you will be also subject to the guidelines and conditions applicable to such service or business. Before placing an order, if you have any queries relating to these terms and conditions, please email our customer service team at hello@dstld.la (Customer service hours: 6am-9pm PST Monday-Friday). By using the DSTLD site and the services offered through it, you agree to be bound by these conditions of use and all related policies, conditions, and guidelines. If you do not agree with any of the conditions of use, you may not use the DSTLD site.</p>
+            </section>
+                <section class="white-block"><p>Privacy Please review our Privacy Policy, which also governs your visit to the DSTLD.com site and forms part of these terms, in order to understand our practices.</p>
+                </section>
+                <section class="white-block"><p>ELECTRONIC COMMUNICATIONS When you visit DSTLD.com or send an e-mail to us, you are communicating with us electronically. You consent to receive communications from us electronically. We will communicate with you by e-mail or by posting notices on the DSTLD site. You agree that all agreements, notices, disclosures, and other communications that we provide to you electronically satisfy any legal requirement that such communications be in writing.</p>
+                </section>
+                <section class="white-block"><p>COPYRIGHT All content included on the DSTLD site - such as text, without limitation, graphics, logos, button icons, images, audio clips, digital downloads, data compilations, and software - is the property of DSTLD.com or content suppliers, and is protected by copyright laws. The compilation of all content on the DSTLD site is the exclusive property of DSTLD.com and protected by copyright laws. All software used on the DSTLD.com site is the property of DSTLD.com or its software suppliers and is protected by copyright laws.</p>
+                </section>
+                <section class="white-block"><p>TRADEMARKS DSTLD.com and other marks indicated on our site are trademarks or registered trademarks of Denim LA Inc. DSTLD graphics, logos, page headers, button icons, scripts, and service names are trademarks of DSTLD. DSTLD's trademarks may not be used in connection with any product or service that is not DSTLD's, in any manner that is likely to cause confusion among customers, or in any manner that disparages or discredits DSTLD. All other trademarks not owned by DSTLD or its affiliates that appear on the DSTLD.com site are the property of their respective owners, who may or may not be affiliated with, connected to, or sponsored by DSTLD.</p>
+                </section>
+                <section class="white-block"><p>#### LICENSE AND SITE ACCESS DSTLD grants you a limited license to access and make personal use of the DSTLD.com site, and not to download (other than page caching) or modify it, or any portion of it, except with the express written consent of DSTLD. This license does not include any resale or commercial use of the DSTLD.com site or its contents; any collection and use of any product listings, descriptions, or prices; any derivative use of the DSTLD.com site or its contents; any downloading or copying of account information for the benefit of another merchant; or any use of data mining, robots, or similar data-gathering and extraction tools. The DSTLD.com site or any portion of it may not be reproduced, duplicated, copied, sold, resold, visited, or otherwise exploited for any commercial purpose without the express written consent of DSTLD. You may not frame or utilize framing techniques to enclose any trademark, logo, or other proprietary information (including images, text, page layout, or form) of DSTLD without express written consent. You may not use any meta tags or any other "hidden text" utilizing DSTLD's name or trademarks without the express written consent of DSTLD. Any unauthorized use terminates the permission or license granted by DSTLD. You are granted a limited, revocable, and nonexclusive right to create a hyperlink to the DSTLD.com home page, so long as the link does not portray DSTLD or our products or services in a false, misleading, derogatory, or otherwise offensive matter. You may not use any DSTLD logo or other proprietary graphic or trademark as part of the link without express written permission.</p>
+                </section>
+                <section class="white-block"><p>#### YOUR ACCOUNT If you use the DSTLD.com site, you are responsible for maintaining the confidentiality of your account and password, as well as for restricting access to your computer, and you agree to accept responsibility for all activities that occur under your account or password. If you are under 18, you may use DSTLD.com only with involvement of a parent or guardian. DSTLD reserves the right to refuse service, terminate accounts, remove or edit content, or cancel orders at our sole discretion.</p>
+                </section>
+                <section class="white-block"><p>#### BILLING, PAYMENT, &amp; CREDIT CARD INFORMATION When you place your first order, we will save your credit card information for use on all future purchases. Any automatic billing and/or charges, as per the membership rules described upon sign-up, will be automatically applied to your saved credit card unless you notify us in advance by emailing hello@dstld.la. We accept Visa, Mastercard, Amex, and Paypal as forms of payment. If your payment method reaches its expiration date and you do not edit your credit card information or cancel your account, you authorize us to continue billing that credit card on file including extending the expiration date until we are notified by you or the credit card company that the account is no longer valid. We encourage you to constantly update your payment method information or cancel your account.</p>
+                </section>
+                <section class="white-block"><p>CONTACTS &amp; INFORMATION IMPORTED VIA SHARING Any contact information imported or shared with another person may be stored privately by DSTLD, as well as the personal information of any recipient. We may also use that recipient's contact information to allow him or her to view and accept your gift, or to allow the recipient to access the information you requested we send.</p>
+                </section>
+                <section class="white-block"><p>INTERNATIONAL SITE ACCESS This site, www.DSTLD.com, can be accessed from countries other than the United States. DSTLD may offer products or references to products that are not available outside of the United States. Any such products or references to products do not imply that such products will be made available outside the United States. If you access and use www.DSTLD.com outside the United States you are responsible for complying with your local laws and regulations.</p>
+                </section>
+                <section class="white-block"><p>REVIEWS, FEEDBACK, COMMENTS, COMMUNICATIONS, AND OTHER CONTENT Visitors may post reviews, comments, and other content; and submit suggestions, ideas, comments, questions, or other information, as long as the content is not illegal, obscene, threatening, defamatory, invasive of privacy, infringing of intellectual property rights, or otherwise injurious to third parties or objectionable, and does not consist of or contain software viruses, political campaigning, commercial solicitation, chain letters, mass mailings, or any form of "spam." You may not use a false e-mail address, impersonate any person or entity, or otherwise mislead as to the origin of a card or other content. DSTLD reserves the right (but not the obligation) to remove or edit such content, but does not regularly review posted content. If you do post content or submit material, and unless we indicate otherwise, you grant DSTLD a nonexclusive, royalty-free, perpetual, irrevocable right to use, reproduce, modify, adapt, publish, translate, create derivative works from, distribute, and display such content throughout the world in any media. You grant DSTLD the right to use the name that you submit in connection with such content, if we choose. You represent and warrant that you own or otherwise control all the rights to the content that you post; that the content is accurate; that use of the content you supply does not violate this policy and will not cause injury to any person or entity; and that you will indemnify DSTLD for all claims resulting from content you supply. DSTLD has the right but not the obligation to monitor and edit or remove any activity or content. DSTLD takes no responsibility and assumes no liability for any content posted by you or any third party.</p>
+                </section>
+                <section class="white-block"><p>COPYRIGHT COMPLAINTS DSTLD respects the intellectual property of others. If you believe that your work has been copied in a way that constitutes copyright infringement, please contact us immediately at hello@dstld.la.</p>
+                </section>
+                <section class="white-block"><p>Risk of Loss All items purchased from DSTLD are made pursuant to a shipment contract. This means that the risk of loss and title for such items passes to you upon our delivery to the carrier.</p>
+                </section>
+                <section class="white-block"><p>#### PRODUCT DESCRIPTIONS DSTLD has made every effort to display as accurately as possible the colors of our products that appear on the website. However, as the actual colors you see will depend on your monitor, we cannot guarantee that your monitor's display of any color will accurately reflect the color of the product on delivery. All sizes and measurements are approximate, however we do make every effort to ensure they are as accurate as possible. We will take all reasonable care to ensure that all details, descriptions and prices of products appearing on the website are correct at the time when the relevant information was entered onto the system. We reserve the right to refuse orders where product information has been incorrectly published, including prices and promotions. DSTLD attempts to be as accurate as possible. However, DSTLD does not warrant that product descriptions or other content of the DSTLD.com site are accurate, complete, reliable, current, or error-free. If a product offered by DSTLD.com is not as described, please contact our customer service department at hello@dstld.la.</p>
+                </section>
+                <section class="white-block"><h4>ILLEGAL USAGE PROHIBITED</h4><p>You shall not use DSTLD’s Website or materials to past, transmit, upload, distribute or publish any content that is libelous, seditious, defamatory, blasphemous, fraudulent, invasive of another’s privacy, tortuous, obscene, pornographic, abusive, infringing or otherwise illegal, as determined in the sole discretion of DSTLD. You agree to comply with all applicable local, provincial, federal and international laws, regulations and treaties while using this site. In addition, while using the website in accordance with these terms as modified from time to time, you agree to comply with generally accepted internet standards and shall refrain from any abusive use of this site.</p>
+                </section>
+                <section class="white-block"><p>DISCLAIMER OF WARRANTIES AND LIMITATION OF LIABILITY The DSTLD.com site is provided by Denim LA Inc. on an "as is" and "as available" basis. DSTLD makes no representations or warranties of any kind, express or implied, as to the operation of this site or the information, content, materials, or products included on this site. You expressly agree that your use of this site is at your sole risk. To the full extent permissible by applicable law, DSTLD disclaims all warranties, express or implied, including, but not limited to, implied warranties of merchantability and fitness for a particular purpose. DSTLD does not warrant that the dstld site, its servers, or e-mail sent from hello@dstld.la are free of viruses or other harmful components.dstld, its partners, affiliates and suppliers and each of their respective directors, officers, employees, consultants, agents, representatives and suppliers will not be liable for any damages of any kind arising from the use of the DSTLD.com site, including, but not limited to, direct, indirect, incidental, punitive (including, without limitation, those damages resulting fromlost profits, lost data or business interruption), and consequential damages. The laws of certain jurisdictions do not allow limitations on implied warranties or the exclusion or limitation of certain damages. If these laws apply to you, some or all of the above disclaimers, exclusions, or limitations might not apply to you, and you might have additional rights.</p>
+                </section>
+                <section class="white-block"><h4>Termination</h4><p>You acknowledge and agree that DSTLD, in its sole and absolute discretion may, without notice to you, suspend or terminate your use of, or access to the website, for any services and remove and discard any related materials for any reason, including where DSTLD believe that you have violated any of these terms. You agree that DSTLD shall not be liable to you or to any person as a result of any such suspension or termination. If you are unsatisfied with any of these terms, please discontinue using this website.</p>
+                </section>
+                <section class="white-block"><p>Disclaimer You acknowledge that you are using this site including its materials at your own risk. DSTLD and its partners, affiliates and suppliers do not guarantee error-free or uninterrupted operations of this site. The products, services and information provided on this site are provided “as is” without any warranties of any kind including warranties of merchantable quality, fitness for particular purpose, or non infringement of intellectual property. DSTLD and its suppliers do not warrant the accuracy and completeness of materials available on or throughout this site. The materials on this site may be out of date, and DSTLD makes no commitment to update the materials. Information published on this site may refer to products, programs or services that are not available on your jurisdiction. Applicable law may not allow the exclusion of implied warranties, so the above exclusions may not apply to you.</p>
+                </section>
+                <section class="white-block"><p>INDEMNIFICATION You shall indemnify and forever save harmless DSTLD, its partners, affiliates, parent company, and suppliers and each of their respective directors, officers, employees, consultants, agents and suppliers from and against any and all claims, demands, actions, suits, losses, costs, charges, expenses, damages and liabilities (including legal fees) which may be incurred by reason of or in connection with your use of this site.</p>
+                </section>
+                <section class="white-block"><p>#### APPLICABLE LAW By visiting the DSTLD.com site, you agree that the laws of California, without regard to principles of conflict of laws, will govern these Conditions of Use. The courts of California shall have exclusive jurisdiction over all disputes. You agree that jurisdiction and venue in such courts is appropriate and you agree to submit to the jurisdiction of such courts.</p>
+                </section>
+                <section class="white-block"><p>REVISION OF TERMS DSTLD may revise these terms at any time by updating this posting. You should visit this page from time to time to review the then-current terms as they are binding on you and your continued use of this site signifies your acceptance of these revised terms. Certain provisions of these terms may be superceeded by expressly designated legal notices or terms located on particular pages of this site.</p>
+                </section>
+                <section class="white-block"><p>ENTIRE AGREEMENT These terms together with DSTLD’s privacy policy constitute the complete and entire agreement between you and DSTLD pertaining to the use of this site and superceed any prior agreements, whether written or oral.</p>
+                </section>
+                <section class="white-block"><p>Waiver DSTLD will not be considered to have waived any of its rights or remedies described in these terms unless the waiver is in writing and signed by DSTLD. No delay or omission by DSTLD in exercising its rights or remedies will impair or be considered as a waiver of its rights to enforce such rights at any time.</p>
+                </section>
+                <section class="white-block"><p>#### SITE POLICIES, MODIFICATION, AND SEVERABILITY Please review our other policies, such as our privacy policy, posted on the DSTLD.com site. These policies also govern your visit to the DSTLD.com site. We reserve the right to make changes to our site, policies, and these Conditions of Use at any time. Any changes or revisions will be effective immediately upon their posting on the DSTLD.com site. Your use of the DSTLD.com site will be subject to the version of the Conditions of Use posted on this site at the time of such use. Accordingly, you are advised to review the Conditions of Use prior to using the DSTLD.com site. YOUR CONTINUED USE OF THIS SITE FOLLOWING THE POSTING OF ANY CHANGES OR REVISIONS WILL CONSTITUTE YOUR ACCEPTANCE OF SUCH CHANGES OR REVISIONS. IF YOU DO NOT AGREE TO ANY CHANGES OR REVISIONS TO THESE CONDITIONS OF USE, YOU MAY NOT USE THE DSTLD.com SITE AND ARE TO DISCONTINUE USE OF THE SITE IMMEDIATELY. If any of these conditions shall be deemed invalid, void, or for any reason unenforceable, that condition shall be deemed severable and shall not affect the validity and enforceability of any remaining condition.</p>
+                </section>
+                <section class="white-block"><h4 class="section-header">OUR ADDRESS</h4><div class="content"><p>DSTLD<br>8899 Beverly Blvd Ste. 600<br>Los Angeles, CA 90048</p></div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer"></div>
+
+<script>
+    $("#nav").load("../modal/nav.html",function () {
+        $('#showUserModal').click(function(){
+            $('#userModal').modal({backdrop: 'static', keyboard: false});
+        });
+    });
+    $("#footer").load("../modal/footer.html");
+</script>
+
+</body>
+
+</html>

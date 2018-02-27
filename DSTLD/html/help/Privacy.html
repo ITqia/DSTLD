@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Privacy</title>
+    <link rel="stylesheet" href="../../bootstrap.min.css"/>
+    <script src="../../jquery-3.2.1.min.js"></script>
+    <script src="../../bootstrap.min.js"></script>
+    <script src="../../angular.min.js"></script>
+    <link  rel="stylesheet" href="../../css/modal/modal.css"/>
+    <link rel="stylesheet" href="../../css/help/privacy.css"/>
+    <script src="../../js/myCtrlModal.js"></script>
+</head>
+<body>
+<!--join/login modal-->
+<div class="modal fade" ng-app="app" id="userModal">
+    <div class="modal-dialog" ng-controller="MyCtrl" ng-model="isShow">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close close-white" data-dismiss="modal" aria-label="Close" ng-click="isShow='LOGIN'">
+                    <img id="img-close" aria-hidden="true" src="../../assets/icon-close-white-308ae050a896916dd8c42f9426025f6a.png"></img>
+                </button>
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="form-holder">
+                            <div>
+                                <form ng-hide=" isShow!='LOGIN' ">
+                                    <h1>SIGN UP AND ENJOY 10% OFF </h1>
+                                    <p>DSTLD strips away excess, impurities, and retail go-betweens, offering men &amp; women of style luxe premium denim &amp; other high-caliber essentials – free of the standard 4-7x markup.</p>
+                                    <br>
+                                    <div class="form-group">
+                                        <input class="form-control underline" placeholder="Email" required="required" type="email" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="btn btn-block btn-black btn--raised" value="NEXT" type="submit"/>
+                                    </div>
+                                </form>
+                                <form id="login" ng-hide="isShow=='LOGIN'">
+                                    <h1>Login</h1>
+                                    <br>
+                                    <div class="form-group">
+                                        <input class="form-control underline" placeholder="Email" required="required" type="email" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control underline" placeholder="Password" required="required" type="email" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="btn btn-block btn-black btn--raised" value="LOGIN" type="submit"/>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <a class="pull-right">Forgot password?</a>
+                                        </div>
+                                    </div>
+                                </form>
+                                <br>
+                                <p>OR JOIN WITH...</p>
+                                <div class="row social-auth">
+                                    <div class="col-sm-6 col-xs-12">
+                                        <a class="btn btn-block btn-fb">
+                                            <span class="fa"></span>
+                                            &nbsp; FACEBOOK
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-6 col-xs-12">
+                                        <a class="btn btn-block btn-google">
+                                            <span class="fa"></span>
+                                            &nbsp; GOOGLE+
+                                        </a>
+                                    </div>
+                                </div>
+                                <br>
+                                <p>ALREADY HAVE AN ACCOUNT?</p>
+                                <br>
+                                <div class="row no-padding">
+                                    <a class="btn btn-block btn-gray" ng-click="isShow='JOIN'">{{isShow}}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 导航栏-->
+<div id="nav"></div>
+<div class="content">
+    <div class="privacy">
+        <div class="container">
+            <div class="col-sm-2 ">
+                <div class="sidebar-menu">
+                    <a href="Shipping.html"><span>Shipping</span></a>
+                    <a href="Returns.html"><span>Returns</span></a>
+                    <a href="FAQ.html"><span>FAQ</span></a>
+                    <a href="Terms.html"><span>Terms</span></a>
+                    <a href="Privacy.html"><span>Privacy</span></a>
+                    <a href="ContactUs.html"><span>Contact Us</span></a>
+                </div>
+            </div>
+            <div class="col-sm-7 col-sm-offset-1">
+                <h4 class="title">Privacy</h4>
+                <section class="white-block">
+                    <p>Privacy Policy Our privacy is one of our top priorities. At www.DSTLDjeans.com, your personal information is only collected in order
+                        for us to process orders. We will not rent, sell, or share any of your information with any other companies or third parties.
+                        We process all credit card payment transactions through Braintree Website Payments and PayPal, highly secured payment processors.
+                        Braintree and PayPal host and handle all the payment information; we do not handle any sensitive financial data on our server.
+                        Your financial information will never be saved in our system. All Braintree and PayPal transactions are encrypted to ensure privacy
+                        of your credit card information. Please visit Braintree.com and PayPal.com for more details. After registration, information such as
+                        name, address, and contact information can be edited at any time, and your account can be closed permanently by contacting our support
+                        team – cs@dstld.la
+                    </p>
+                </section>
+                <section class="white-block">
+                    <p>
+                        A Note from our Friends at Google
+                    </p>
+                    <p>
+                        Google Site Stats You may have clicked on an ad for this website that was delivered by Google.
+                    </p>
+                    <p>
+                        Relevant Ads, Quality Advertisers Google measures the performance of the advertising it delivers. By providing a tool
+                        to more accurately measure the performance of the ads we deliver, Google (and advertisers)
+                        will be able to improve the quality and relevance of the ads that you see.
+                    </p>
+                    <p>
+                        Your Privacy To measure performance, Google uses small strings of text (known as cookies) that are placed on
+                        your computer when you click on ads. Cookies typically remain active on your computer for about 30 days.
+                        If you visit certain pages of the advertiser's website during that period, Google and the advertiser will
+                        be able to tell that you saw the ad delivered by Google. If you'd like to know more about how Google handles
+                        information gathered from the use of cookies, please read our privacy policy. If you want to disable the use
+                        of cookies, you can reset your browser to refuse all cookies or to indicate when a cookie is being sent.
+                        Be aware, however, that some websites may not function properly if you refuse to accept cookies.
+                    </p>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer"></div>
+
+<script>
+    $("#nav").load("../modal/nav.html",function () {
+        $('#showUserModal').click(function(){
+            $('#userModal').modal({backdrop: 'static', keyboard: false});
+        });
+    });
+    $("#footer").load("../modal/footer.html");
+</script>
+
+</body>
+
+</html>

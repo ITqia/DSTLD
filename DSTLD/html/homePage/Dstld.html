@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DSTLD</title>
+    <script src="../../jquery-3.2.1.min.js"></script>
+    <script src="../../bootstrap.min.js"></script>
+    <script src="../../angular.min.js"></script>
+    <link rel="stylesheet" href="../../bootstrap.min.css"/>
+    <link  rel="stylesheet" href="../../css/modal/modal.css"/>
+    <script src="../../js/myCtrlModal.js"></script>
+    <link rel="stylesheet" href="../../css/dstld.css"/>
+</head>
+<body>
+<!--join/login modal-->
+<div class="modal fade" ng-app="app" id="userModal">
+    <div class="modal-dialog" ng-controller="MyCtrl" ng-model="isShow">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close close-white" data-dismiss="modal" aria-label="Close" ng-click="isShow='LOGIN'">
+                    <img id="img-close" aria-hidden="true" src="../../assets/icon-close-white-308ae050a896916dd8c42f9426025f6a.png"></img>
+                </button>
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="form-holder">
+                            <div>
+                                <form ng-hide=" isShow!='LOGIN' ">
+                                    <h1>SIGN UP AND ENJOY 10% OFF </h1>
+                                    <p>DSTLD strips away excess, impurities, and retail go-betweens, offering men &amp; women of style luxe premium denim &amp; other high-caliber essentials – free of the standard 4-7x markup.</p>
+                                    <br>
+                                    <div class="form-group">
+                                        <input class="form-control underline" placeholder="Email" required="required" type="email" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="btn btn-block btn-black btn--raised" value="NEXT" type="submit"/>
+                                    </div>
+                                </form>
+                                <form id="login" ng-hide="isShow=='LOGIN'">
+                                    <h1>Login</h1>
+                                    <br>
+                                    <div class="form-group">
+                                        <input class="form-control underline" placeholder="Email" required="required" type="email" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control underline" placeholder="Password" required="required" type="email" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="btn btn-block btn-black btn--raised" value="LOGIN" type="submit"/>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <a class="pull-right">Forgot password?</a>
+                                        </div>
+                                    </div>
+                                </form>
+                                <br>
+                                <p>OR JOIN WITH...</p>
+                                <div class="row social-auth">
+                                    <div class="col-sm-6 col-xs-12">
+                                        <a class="btn btn-block btn-fb">
+                                            <span class="fa"></span>
+                                            &nbsp; FACEBOOK
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-6 col-xs-12">
+                                        <a class="btn btn-block btn-google">
+                                            <span class="fa"></span>
+                                            &nbsp; GOOGLE+
+                                        </a>
+                                    </div>
+                                </div>
+                                <br>
+                                <p>ALREADY HAVE AN ACCOUNT?</p>
+                                <br>
+                                <div class="row no-padding">
+                                    <a class="btn btn-block btn-gray" ng-click="isShow='JOIN'">{{isShow}}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 导航栏-->
+<div id="nav"></div>
+<div class="content">
+        <div class="repa-home-banner">
+            <div class="row">
+                <div class="col-sm-5 col-sm-offset-1">
+                    <h2 class="big">Invest in DSTLD</h2>
+                    <p>Last year, DSTLD became the first-ever fashion brand to launch a Reg A+ financing campaign.
+                        We raised over $1.7M from more than 1,700 investors, concentrated our efforts on growth, and most
+                        notably - our lifetime revenue by 194% in just 12 months - and are back for a second round.
+                    </p>
+                    <p>
+                        Join the company redefining retail.
+                    </p>
+                    <div class="row stats">
+                        <div class="col-sm-3 col-xs-4">
+                            <h2 class="big">$11M+</h2>
+                            <p>Lifetime Revenue</p>
+                        </div>
+                        <div class="col-sm-3 col-sm-offset-1 col-xs-4">
+                            <h2 class="big">$30M</h2>
+                            <p>Valuation</p>
+                        </div>
+                        <div class="col-sm-3 col-sm-offset-1 col-xs-4">
+                            <h2 class="big">$315Bn+</h2>
+                            <p>Market Potential</p>
+                        </div>
+                    </div>
+                    <a class="btn btn-white learn-more-btn" href="#">
+                        Learn More →
+                    </a>
+                    <p class="hidden-xs">#retailrebellion</p>
+                </div>
+            </div>
+        </div>
+        <div class="home-main col-sm-12 no-padding">
+            <div class="col-sm-6 no-padding">
+                <a href="#">
+                    <img src="../../assets/dstld/original.jpg" />
+                    <figcaption>
+                        <div class="content-holder">
+                            <h2 class="text-center">Women</h2>
+                        </div>
+                    </figcaption>
+                </a>
+            </div>
+            <div class="col-sm-6 no-padding">
+                <a href="#">
+                    <img src="../../assets/dstld/original_1.jpg" />
+                    <figcaption>
+                        <div class="content-holder">
+                            <h2 class="text-center">Men</h2>
+                        </div>
+                    </figcaption>
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-12 home-intro">
+            <h3>Premium Denim + Essentials</h3>
+            <p>We design + craft luxury-grade denim and essentials and refuse to work with department stores and
+                retail middlemen, passing on the savings to you.
+            </p>
+        </div>
+        <section class="hidden-xs">
+            <div class="col-sm-12 mantra">
+                <div class="logo2">
+                    <img src="../../assets/dstld/logo-white-d3f81b03bdec11819bfde8e9392bdc5a.png"/>
+                </div>
+                <br>
+                <p>pronounced dis-til'd</p>
+                <br>
+                <br>
+                <h1>WE BELIEVE LESS IS MORE</h1>
+                <h1>WE THINK RETAIL MUST EVOLVE</h1>
+                <h1>WE DREAM IN BLACK+WHITE</h1>
+                <h1>WE LIVE IN DENIM</h1>
+                <br>
+                <br>
+                <h4>Dis'till</h4>
+                <p>Extract the essential meaning or most important aspect of</p>
+            </div>
+        </section>
+        <section class="new-arrivals">
+            <div class="col-sm-12">
+                <h4 class="new-title">New Arrivals</h4>
+                <ul class="nav nav-tabs">
+                    <li><a href="#">All</a></li>
+                    <span>&nbsp;/&nbsp;</span>
+                    <li><a href="#">Womens</a></li>
+                    <span>&nbsp;/&nbsp;</span>
+                    <li><a href="#">Mens</a></li>
+                    <br>
+                    <br>
+                    <div class="tab-content row">
+                        <div class="product-grid">
+                            <div class="col-sm-3 col-xs-6 product">
+                                <div class="img">
+                                    <a href="#">
+                                        <div class="coming-soon">
+                                            <h2>waitlist</h2>
+                                        </div>
+                                        <div class="square-product-img">
+                                            <img class="product-img" src="../../assets/dstld/leather-oversized-shopping-bag-in-black-product-medium.jpg"/>
+                                            <img alt="Dstld loader" class="bg-img" src="../../assets/dstld/dstld-loader-c3c41166b90c235fed5f014602ef1d59.gif" width="100%">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product-content" >
+                                    <div class="product-name">Leather Oversized Shopping Bag</div>
+                                    <div class="color">black</div>
+                                    <span class="price">$175 &nbsp;&nbsp;
+                                        <span class="strike">$280</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-xs-6 product">
+                                <div class="img">
+                                    <a href="#">
+                                        <div class="coming-soon">
+                                            <h2>waitlist</h2>
+                                        </div>
+                                        <div class="square-product-img">
+                                            <img class="product-img" src="../../assets/dstld/leather-and-suede-backpack-in-black-product-medium.jpg"/>
+                                            <img alt="Dstld loader" class="bg-img" src="../../assets/dstld/dstld-loader-c3c41166b90c235fed5f014602ef1d59.gif" width="100%">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product-content" >
+                                    <div class="product-name">Leather Oversized Shopping Bag</div>
+                                    <div class="color">black</div>
+                                    <span class="price">$255 &nbsp;&nbsp;
+                                        <span class="strike">$450</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-xs-6 product">
+                                <div class="img">
+                                    <a href="#">
+                                        <div class="coming-soon">
+                                            <h2>waitlist</h2>
+                                        </div>
+                                        <div class="square-product-img">
+                                            <img class="product-img" src="../../assets/dstld/womens-leather-tote-bag-in-black-product-medium.jpg"/>
+                                            <img alt="Dstld loader" class="bg-img" src="../../assets/dstld/dstld-loader-c3c41166b90c235fed5f014602ef1d59.gif" width="100%">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product-content" >
+                                    <div class="product-name">Leather Tote Bag With Insert</div>
+                                    <div class="color">black</div>
+                                    <span class="price">$215 &nbsp;&nbsp;
+                                        <span class="strike">$480</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-xs-6 product">
+                                <div class="img">
+                                    <a href="#">
+                                        <div class="coming-soon">
+                                            <h2>waitlist</h2>
+                                        </div>
+                                        <div class="square-product-img">
+                                            <img class="product-img" src="../../assets/dstld/leather-tote-bag-in-black-product-medium.jpg"/>
+                                            <img alt="Dstld loader" class="bg-img" src="../../assets/dstld/dstld-loader-c3c41166b90c235fed5f014602ef1d59.gif" width="100%">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product-content" >
+                                    <div class="product-name">Leather Tote Bag</div>
+                                    <div class="color">black</div>
+                                    <span class="price">$210 &nbsp;&nbsp;
+                                        <span class="strike">$450</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-xs-6 product">
+                                <div class="img">
+                                    <a href="#">
+                                        <div class="coming-soon">
+                                            <h2>waitlist</h2>
+                                        </div>
+                                        <div class="square-product-img">
+                                            <img class="product-img" src="../../assets/dstld/leather-dufflebag-in-black-product-medium.jpg"/>
+                                            <img alt="Dstld loader" class="bg-img" src="../../assets/dstld/dstld-loader-c3c41166b90c235fed5f014602ef1d59.gif" width="100%">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product-content" >
+                                    <div class="product-name">Leather Dufflebag</div>
+                                    <div class="color">black</div>
+                                    <span class="price">$315 &nbsp;&nbsp;
+                                        <span class="strike">$510</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-xs-6 product">
+                                <div class="img">
+                                    <a href="#">
+                                        <div class="coming-soon">
+                                            <h2>waitlist</h2>
+                                        </div>
+                                        <div class="square-product-img">
+                                            <img class="product-img" src="../../assets/dstld/leather-and-canvas-dufflebag-in-black-product-medium.jpg"/>
+                                            <img alt="Dstld loader" class="bg-img" src="../../assets/dstld/dstld-loader-c3c41166b90c235fed5f014602ef1d59.gif" width="100%">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product-content" >
+                                    <div class="product-name">Leather Oversized Shopping Bag</div>
+                                    <div class="color">black</div>
+                                    <span class="price">$185 &nbsp;&nbsp;
+                                        <span class="strike">$310</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-xs-6 product">
+                                <div class="img">
+                                    <a href="#">
+                                        <div class="coming-soon">
+                                            <h2>waitlist</h2>
+                                        </div>
+                                        <div class="square-product-img">
+                                            <img class="product-img" src="../../assets/dstld/leather-and-canvas-tote-bag-in-black-product-medium.jpg"/>
+                                            <img alt="Dstld loader" class="bg-img" src="../../assets/dstld/dstld-loader-c3c41166b90c235fed5f014602ef1d59.gif" width="100%">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product-content" >
+                                    <div class="product-name">Leather Oversized Shopping Bag</div>
+                                    <div class="color">black</div>
+                                    <span class="price">$175 &nbsp;&nbsp;
+                                        <span class="strike">$280</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-xs-6 product">
+                                <div class="img">
+                                    <a href="#">
+                                        <div class="coming-soon">
+                                            <h2>waitlist</h2>
+                                        </div>
+                                        <div class="square-product-img">
+                                            <img class="product-img" src="../../assets/dstld/leather-and-canvas-backpack-in-black-product-medium.jpg"/>
+                                            <img alt="Dstld loader" class="bg-img" src="../../assets/dstld/dstld-loader-c3c41166b90c235fed5f014602ef1d59.gif" width="100%">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product-content" >
+                                    <div class="product-name">Leather And Canvas Backpack</div>
+                                    <div class="color">black</div>
+                                    <span class="price">$180 &nbsp;&nbsp;
+                                        <span class="strike">$300</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </section>
+    </div>
+<div id="footer"></div>
+<script>
+    $("#nav").load("../modal/nav.html",function () {
+        $('#showUserModal').click(function(){
+            $('#userModal').modal({backdrop: 'static', keyboard: false});
+        });
+    });
+    $("#footer").load("../modal/footer.html");
+</script>
+
+</html>

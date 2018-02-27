@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pop Up</title>
+    <link rel="stylesheet" href="../../bootstrap.min.css"/>
+    <script src="../../jquery-3.2.1.min.js"></script>
+    <script src="../../bootstrap.min.js"></script>
+    <script src="../../angular.min.js"></script>
+    <script src="../../js/myCtrlModal.js"></script>
+    <link  rel="stylesheet" href="../../css/modal/modal.css"/>
+    <link rel="stylesheet" href="../../css/pop_up.css"/>
+</head>
+<body>
+<!--join/login modal-->
+<div class="modal fade" ng-app="app" id="userModal">
+    <div class="modal-dialog" ng-controller="MyCtrl" ng-model="isShow">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close close-white" data-dismiss="modal" aria-label="Close" ng-click="isShow='LOGIN'">
+                    <img id="img-close" aria-hidden="true" src="../../assets/icon-close-white-308ae050a896916dd8c42f9426025f6a.png"></img>
+                </button>
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="form-holder">
+                            <div>
+                                <form ng-hide=" isShow!='LOGIN' ">
+                                    <h1>SIGN UP AND ENJOY 10% OFF </h1>
+                                    <p>DSTLD strips away excess, impurities, and retail go-betweens, offering men &amp; women of style luxe premium denim &amp; other high-caliber essentials – free of the standard 4-7x markup.</p>
+                                    <br>
+                                    <div class="form-group">
+                                        <input class="form-control underline" placeholder="Email" required="required" type="email" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="btn btn-block btn-black btn--raised" value="NEXT" type="submit"/>
+                                    </div>
+                                </form>
+                                <form id="login" ng-hide="isShow=='LOGIN'">
+                                    <h1>Login</h1>
+                                    <br>
+                                    <div class="form-group">
+                                        <input class="form-control underline" placeholder="Email" required="required" type="email" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control underline" placeholder="Password" required="required" type="email" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="btn btn-block btn-black btn--raised" value="LOGIN" type="submit"/>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <a class="pull-right">Forgot password?</a>
+                                        </div>
+                                    </div>
+                                </form>
+                                <br>
+                                <p>OR JOIN WITH...</p>
+                                <div class="row social-auth">
+                                    <div class="col-sm-6 col-xs-12">
+                                        <a class="btn btn-block btn-fb">
+                                            <span class="fa"></span>
+                                            &nbsp; FACEBOOK
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-6 col-xs-12">
+                                        <a class="btn btn-block btn-google">
+                                            <span class="fa"></span>
+                                            &nbsp; GOOGLE+
+                                        </a>
+                                    </div>
+                                </div>
+                                <br>
+                                <p>ALREADY HAVE AN ACCOUNT?</p>
+                                <br>
+                                <div class="row no-padding">
+                                    <a class="btn btn-block btn-gray" ng-click="isShow='JOIN'">{{isShow}}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 导航栏-->
+<div id="nav"></div>
+<!--content-->
+<div class="content">
+    <!-- banner(横幅)-->
+    <div class="banner hidden-xs">
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1">
+                <div class="col-sm-7">
+                    <p class="big">You can now invest in DSTLD</p>
+                    <p>Learn how you can be part of our growth.Join the #retailrebellion</p>
+                </div>
+                <div class="col-sm-5">
+                    <a class="btn btn-white">LEARN MORE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--pop-up-->
+    <div class="pop-up">
+        <div class="row">
+            <div class="col-sm-4 pop-up-text">
+                <div>
+                    <p><strong>WEST HOLLYWOOD, CA</strong>
+                        <br>
+                        NOVEMBER 02 - DECEMBER 31
+                    </p>
+                    <p>
+                        Visit us at our newest showroom location in the heart of West Hollywood's fashion, culinary, and creative district,
+                        La Cienega Design Quarter.
+                    </p>
+                    <p>
+                        Get the facts on fit and fabric with a personal DSTLD Stylist who will work with you one on one to achieve
+                        style perfection. Available to you: A full size range of our entire collection to try on, plus coming soon pieces
+                        and the occasional limited edition collaboration.
+                    </p>
+                    <p>
+                        All orders placed in-store will receive free shipping. You'll leave hands free, but with your confidence full.
+                    </p>
+                    <p>
+                        <strong>HOURS</strong>
+                        <br>
+                        Monday - Friday: 10a - 8p
+                        <br>
+                        Saturday: 10a - 7p
+                        <br>
+                        Sunday: 10a - 5p
+                    </p>
+                    <p>
+                        <strong>HOLIDAY HOURS</strong>
+                        <br>
+                        Closed on Christmas Eve and Christmas Day.
+                    </p>
+                    <p>
+                        <strong>ADDRESS</strong>
+                        <br>
+                        611 N La Cienega Blvd
+                        <br>
+                        West Hollywood, CA 90069
+                    </p>
+                    <p>
+                        <strong>FOR INQUIRIES</strong>
+                        hello@dstld.la
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <img src="../../assets/pop-up/pop-up-1-0c5177de58595b8d156f7486320734ef.jpg"/>
+                <img src="../../assets/pop-up/pop-up-2-5d8d1f06cc31569d8bd0ec73da6ed1a9.jpg"/>
+                <img src="../../assets/pop-up/pop-up-3-41a0dbb0974ab78e3829964848603457.jpg"/>
+                <img src="../../assets/pop-up/pop-up-4-2b8ba6ab6ab0b2e220458669b5fcdc6d.jpg"/>
+                <img src="../../assets/pop-up/pop-up-5-bbc02214c83ce9cd7063fa6fc92a9b6c.jpg"/>
+                <img src="../../assets/pop-up/pop-up-6-f3df810b4c4d15acadef59537918b39f.jpg"/>
+                <img src="../../assets/pop-up/pop-up-7-5888db4db25e993b9ecf4f46ab6aaec8.jpg"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footer"></div>
+
+<script>
+    $("#nav").load("../modal/nav.html",function () {
+        $('#showUserModal').click(function(){
+            $('#userModal').modal({backdrop: 'static', keyboard: false});
+        });
+    });
+    $("#footer").load("../modal/footer.html");
+</script>
+
+</body>
+</html>

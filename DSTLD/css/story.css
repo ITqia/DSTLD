@@ -1,0 +1,38 @@
+.centered-text{
+    text-align: center;
+}
+.big{
+    font-size: 48px;
+}
+.centered-text h3{
+    font-size: 18px;
+}
+.centered-text h2{
+    font-size: 16px;
+}
+.centered-text h5{
+    font-weight: 700;
+}
+.centered-text a{
+    color: #000;
+    text-decoration: underline;
+}
+.small{
+    font-size: 85%;
+}
+.list-unstyled{
+    list-style: none;
+    font-size: 24px;
+    text-align: center;
+}
+.list-unstyled li{
+    display: inline-block;
+}
+.list-unstyled li a{
+    display: block;
+    padding: 20px;
+    color: #9f9f9f;
+}
+.list-unstyled li a:hover{
+    color: #0A0A0A;
+}

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shipping</title>
+    <link rel="stylesheet" href="../../bootstrap.min.css"/>
+    <script src="../../jquery-3.2.1.min.js"></script>
+    <script src="../../bootstrap.min.js"></script>
+    <script src="../../angular.min.js"></script>
+    <link  rel="stylesheet" href="../../css/modal/modal.css"/>
+    <link rel="stylesheet" href="../../css/help/shipping.css"/>
+    <script src="../../js/myCtrlModal.js"></script>
+</head>
+<body>
+<!--join/login modal-->
+<div class="modal fade" ng-app="app" id="userModal">
+    <div class="modal-dialog" ng-controller="MyCtrl" ng-model="isShow">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close close-white" data-dismiss="modal" aria-label="Close" ng-click="isShow='LOGIN'">
+                    <img id="img-close" aria-hidden="true" src="../../assets/icon-close-white-308ae050a896916dd8c42f9426025f6a.png"></img>
+                </button>
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="form-holder">
+                            <div>
+                                <form ng-hide=" isShow!='LOGIN' ">
+                                    <h1>SIGN UP AND ENJOY 10% OFF </h1>
+                                    <p>DSTLD strips away excess, impurities, and retail go-betweens, offering men &amp; women of style luxe premium denim &amp; other high-caliber essentials – free of the standard 4-7x markup.</p>
+                                    <br>
+                                    <div class="form-group">
+                                        <input class="form-control underline" placeholder="Email" required="required" type="email" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="btn btn-block btn-black btn--raised" value="NEXT" type="submit"/>
+                                    </div>
+                                </form>
+                                <form id="login" ng-hide="isShow=='LOGIN'">
+                                    <h1>Login</h1>
+                                    <br>
+                                    <div class="form-group">
+                                        <input class="form-control underline" placeholder="Email" required="required" type="email" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control underline" placeholder="Password" required="required" type="email" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="btn btn-block btn-black btn--raised" value="LOGIN" type="submit"/>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <a class="pull-right">Forgot password?</a>
+                                        </div>
+                                    </div>
+                                </form>
+                                <br>
+                                <p>OR JOIN WITH...</p>
+                                <div class="row social-auth">
+                                    <div class="col-sm-6 col-xs-12">
+                                        <a class="btn btn-block btn-fb">
+                                            <span class="fa"></span>
+                                            &nbsp; FACEBOOK
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-6 col-xs-12">
+                                        <a class="btn btn-block btn-google">
+                                            <span class="fa"></span>
+                                            &nbsp; GOOGLE+
+                                        </a>
+                                    </div>
+                                </div>
+                                <br>
+                                <p>ALREADY HAVE AN ACCOUNT?</p>
+                                <br>
+                                <div class="row no-padding">
+                                    <a class="btn btn-block btn-gray" ng-click="isShow='JOIN'">{{isShow}}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 导航栏-->
+<div id="nav"></div>
+<div class="content">
+    <div class="customer-care">
+        <div class="container">
+            <div class="col-sm-2 ">
+                <div class="sidebar-menu">
+                    <a href="Shipping.html"><span>Shipping</span></a>
+                    <a href="Returns.html"><span>Returns</span></a>
+                    <a href="FAQ.html"><span>FAQ</span></a>
+                    <a href="Terms.html"><span>Terms</span></a>
+                    <a href="Privacy.html"><span>Privacy</span></a>
+                    <a href="ContactUs.html"><span>Contact Us</span></a>
+                </div>
+            </div>
+            <div class="col-sm-7 col-sm-offset-1">
+                <h4 class="title">Shipping</h4>
+                <p class="subtitle">GENERAL INFORMATION</p>
+                <ul>
+                    <li>Please allow 24-48 business hours for warehouse processing after all orders are placed.</li>
+                    <li>Phone number is required at checkout for additional security.</li>
+                    <li>If package is undeliverable because of missing, incorrect, or incomplete apartment numbers,
+                        suite numbers, or other destination information, cost of resending package will be invoiced to customer.
+                    </li>
+                    <li>
+                        To CANCEL or MODIFY your order, please contact us at <a href="#">hello@dstld.la.</a> We will do our best to accommodate your needs,
+                        but we cannot cancel or modify orders that have already shipped.
+                    </li>
+                    <li>
+                        In cases of errors or delays caused by the shipping carrier, we will help resolve the dispute to the best of our
+                        abilities, but we will not be held liable or responsible for carrier delays or errors.
+                    </li>
+                    <li>
+                        Please note all orders over $200.00 will require a signature.
+                    </li>
+                </ul>
+                <hr>
+                <p class="subtitle">SHIPPING IN U.S.A.</p>
+                <ul>
+                    <li>Free Ground Shipping (3-7 business days)</li>
+                    <li>$20 Expedited Shipping available on U.S. orders</li>
+                </ul>
+                <p class="subtitle">SHIPPING INTERNATIONALLY</p>
+                <ul>
+                    <li>
+                        <p class="thrtitle">DUTIES & TAXES</p>
+                        <p>Duties, customs tariffs and VAT are set by the local government and determined based on a combination of the
+                            country of origin or manufacturing of the goods being purchased, and the classification of that merchandise in accordance
+                            with a harmonized system adopted and used by the local government. The amount of duty, tariffs and taxes will vary and will
+                            be due to your country’s customs authority upon delivery.
+                        </p>
+                    </li>
+                    <li>
+                        <p class="thrtitle">HOW MUCH DOES INTERNATIONAL SHIPPING COST?</p>
+                        <p>
+                            International shipping is calculated based on a number of factors including the
+                            number of items, the weight and the destination country/region. International shipping will be
+                            calculated and displayed during checkout based on the items you are purchasing and your shipping
+                            destination.
+                        </p>
+                        <br>
+                        <p>We proudly ship to:</p>
+                        <table >
+                            <tbody>
+                            <tr><th class="country">Country</th><th>Rate</th></tr>
+                            <tr><td>Australia</td><td>$35.00</td></tr>
+                            <tr><td>Austria</td><td>$15.00</td></tr>
+                            <tr><td>Belgium</td><td>$10.00</td></tr>
+                            <tr><td>Canada</td><td>$5.00</td></tr>
+                            <tr><td>Czech Republic</td><td>$15.00</td></tr>
+                            <tr><td>Denmark</td><td>$15.00</td></tr>
+                            <tr><td>Finland</td><td>$20.00</td></tr>
+                            <tr><td>France</td><td>$15.00</td></tr>
+                            <tr><td>Germany</td><td>$10.00</td></tr>
+                            <tr><td>Greece</td><td>$15.00</td></tr>
+                            <tr><td>Hong Kong</td><td>$25.00</td></tr>
+                            <tr><td>Ireland</td><td>$15.00</td></tr>
+                            <tr><td>Israel</td><td>$25.00</td></tr>
+                            <tr><td>Italy</td><td>$15.00</td></tr>
+                            <tr><td>Luxembourg</td><td>$10.00</td></tr>
+                            <tr><td>Netherlands</td><td>$10.00</td></tr>
+                            <tr><td>New Zealand</td><td>$15.00</td></tr>
+                            <tr><td>Portugal</td><td>$15.00</td></tr>
+                            <tr><td>Singapore</td><td>$25.00</td></tr>
+                            <tr><td>South Korea</td><td>$15.00</td></tr>
+                            <tr><td>Spain</td><td>$20.00</td></tr>
+                            <tr><td>Sweden</td><td>$15.00</td></tr>
+                            <tr><td>Switzerland</td><td>$20.00</td></tr>
+                            <tr><td>United Kingdom</td><td>$5.00</td></tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ul>
+                <p class="subtitle">DOMESTIC HOLIDAY SHIPPING SCHEDULE 2017</p>
+                <p class="thrtitle">To help ensure delivery by 12/24 please refer to the guidelines below</p>
+                <ul>
+                    <li>USPS Parcel Select - December 13th</li>
+                    <li>UPS Ground - December 15th</li>
+                    <li>UPS 2 Day - December 20th</li>
+                </ul>
+                <p class="subtitle">INTERNATIONAL HOLIDAY SHIPPING SCHEDULE 2017</p>
+                <ul>
+                    <li>RRD Priority Parcel Canada - December 7th</li>
+                    <li>RRD International Mail - November 28th</li>
+                </ul>
+                <br>
+                <p class="small">*For consumer protection, all orders are subject to review. On occasion, this may cause a delay in processing your order.
+                    Weather issues may also cause a delay in delivery.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer"></div>
+
+<script>
+    $("#nav").load("../modal/nav.html",function () {
+        $('#showUserModal').click(function(){
+            $('#userModal').modal({backdrop: 'static', keyboard: false});
+        });
+    });
+    $("#footer").load("../modal/footer.html");
+</script>
+
+</body>
+
+</html>

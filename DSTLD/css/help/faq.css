@@ -1,0 +1,36 @@
+.faq{
+    margin-top: 60px;
+    margin-bottom:10px;
+}
+.sidebar-menu a{
+    font-family: "Helvetica Neue LT W01_35 Thin",Helvetica,Arial,sans-serif!important;
+    display: block;
+    color: #0A0A0A;
+    padding-bottom: 5px;
+    text-decoration: underline;
+    letter-spacing: .5px;
+}
+.container{
+    margin: 0;
+}
+.title{
+    font-size:16px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.underline{
+    text-decoration: underline;
+}
+.faq p{
+    letter-spacing: .5px;
+}
+.faq strong{
+    font-weight: 500;
+}
+.faq p a {
+    color: #0A0A0A;
+    text-decoration: underline;
+}
+.faq ul{
+    list-style: none;
+}
